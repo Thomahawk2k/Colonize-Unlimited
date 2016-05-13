@@ -1222,7 +1222,65 @@ tech_atmosphere_mining = {
 	}
 }
 
+tech_hydrogen_burning = {
+	cost = tier2cost4
+	area = engineering
+	category = { industry }
+	tier = 2
+	prerequisites = { "tech_terrestrial_sculpting" }
 
+	## Unlock Hydroburning plants
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
+
+tech_artificial_diamonds = {
+	cost = tier2cost4
+	area = engineering
+	category = { industry }
+	tier = 2
+	prerequisites = { "tech_terrestrial_sculpting" }
+
+	## Unlock Crystallizing Facilities
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}			
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = engineering
+				has_trait = "leader_trait_expertise_industry"
+			}
+		}
+	}
+}
 
 #Powered Exoskeletons
 tech_powered_exoskeletons = {

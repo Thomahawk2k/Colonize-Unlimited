@@ -95,7 +95,7 @@ building_gas_catcher_1 = {
 	
 	allow = {
 		custom_tooltip = {
-			text = "wrong_planet_class"
+			text = "wrong_planet_class_ctt"
 			planet = {
 				NOT = {
 					OR = {
@@ -139,7 +139,7 @@ building_gas_catcher_2 = {
 			}
 		}
 		custom_tooltip = {
-			text = "wrong_planet_class"
+			text = "wrong_planet_class_ctt"
 			planet = {
 				NOT = {
 					OR = {
@@ -154,7 +154,7 @@ building_gas_catcher_2 = {
 	}
 }
 
-hydrofusion_plant = {
+building_hydrofusion_plant = {
 	base_buildtime = @b2time
 	
 	cost = {
@@ -186,11 +186,11 @@ hydrofusion_plant = {
 
 
 	prerequisites = {
-		"tech_hydrofusion"
+		"tech_hydrogen_burning"
 	}		
 }
 
-crystallizing_facility_1 = {
+building_crystallizing_facility_1 = {
 	base_buildtime = @b3time
 	
 	cost = {
@@ -218,16 +218,12 @@ crystallizing_facility_1 = {
 		sr_oxygen = 2
 	}
 	
-#	upgrades = {
-#		building_power_plant_4
-#	}
-	
 	prerequisites = {
 		"tech_artificial_diamonds"
 	}	
 }
 
-burning_facility = {
+building_burning_facility = {
 	base_buildtime = @b0time
 	planet_unique = yes
 	
@@ -250,9 +246,6 @@ burning_facility = {
 	
 	produced_resources = {
 		sr_carbon_dioxide = 3
-	}
-	
-	required_resources = {
 		energy = 3
 	}
 	
