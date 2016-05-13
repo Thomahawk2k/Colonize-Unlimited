@@ -31,8 +31,7 @@ terraform_link = {
 	#cost
 	energy = 1500
 	resources = {
-		sr_terraform_gases = 2
-		sr_terraform_liquids = 2
+		sr_carbondioxide = 2
 	}
 	
 	condition = {
@@ -59,8 +58,7 @@ terraform_link = {
 	#cost
 	energy = 1500
 	resources = {
-		sr_terraform_gases = 2
-		sr_terraform_liquids = 2
+		sr_carbon = 2
 	}
 	
 	condition = {
@@ -86,7 +84,8 @@ terraform_link = {
 	
 	energy = 1500
 	resources = {
-		sr_terraform_liquids = 3
+		sr_carbon = 1
+		sr_water = 4
 	}
 
 	condition = {
@@ -112,7 +111,7 @@ terraform_link = {
 	
 	energy = 1500
 	resources = {
-		sr_terraform_liquids = 3
+		sr_carbondioxide = 1
 	}
 
 	condition = {
@@ -138,8 +137,7 @@ terraform_link = {
 	
 	energy = 1500
 	resources = {
-		sr_terraform_gases = 2
-		sr_terraform_liquids = 2
+		sr_carbondioxide = 1
 	}
 	
 	condition = {
@@ -165,8 +163,7 @@ terraform_link = {
 	
 	energy = 1500
 	resources = {
-		sr_terraform_gases = 2
-		sr_terraform_liquids = 2
+		sr_carbon = 1
 	}
 	
 	condition = {
@@ -192,8 +189,7 @@ terraform_link = {
 	
 	energy = 1500
 	resources = {
-		sr_terraform_gases = 2
-		sr_terraform_liquids = 2
+		sr_dioxide = 3
 	}
 	
 	condition = {
@@ -219,8 +215,7 @@ terraform_link = {
 	
 	energy = 1500
 	resources = {
-		sr_terraform_gases = 2
-		sr_terraform_liquids = 2
+		sr_carbon = 3
 	}
 	
 	condition = {
@@ -246,7 +241,7 @@ terraform_link = {
 	
 	energy = 1500
 	resources = {
-		sr_terraform_liquids = 3
+		sr_water = 2
 	}
 
 	condition = {
@@ -272,7 +267,7 @@ terraform_link = {
 	
 	energy = 1500
 	resources = {
-		sr_terraform_gases = 3
+		sr_carbondioxide = 2
 	}
 
 	condition = {
@@ -298,8 +293,7 @@ terraform_link = {
 	
 	energy = 1500
 	resources = {
-		sr_terraform_gases = 2
-		sr_terraform_liquids = 2
+		sr_water = 2
 	}
 	
 	condition = {
@@ -325,8 +319,7 @@ terraform_link = {
 	
 	energy = 1500
 	resources = {
-		sr_terraform_gases = 2
-		sr_terraform_liquids = 2
+		sr_water = 2
 	}
 	
 	condition = {
@@ -352,7 +345,7 @@ terraform_link = {
 	
 	energy = 1500
 	resources = {
-		sr_terraform_liquids = 3
+		sr_water = 1
 	}
 
 	condition = {
@@ -378,7 +371,7 @@ terraform_link = {
 	
 	energy = 1500
 	resources = {
-		sr_terraform_gases = 3
+		sr_carbondioxide = 1
 	}
 
 	condition = {
@@ -404,8 +397,8 @@ terraform_link = {
 	
 	energy = 1500
 	resources = {
-		sr_terraform_gases = 2
-		sr_terraform_liquids = 2
+		sr_carbondioxide = 1
+		sr_water = 1
 	}
 	
 	condition = {
@@ -431,8 +424,7 @@ terraform_link = {
 	
 	energy = 1500
 	resources = {
-		sr_terraform_gases = 2
-		sr_terraform_liquids = 2
+		sr_carbon = 1
 	}
 	
 	condition = {
@@ -466,8 +458,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 4
+		sr_carbondioxide = 1
 	}
 	
 	condition = {
@@ -483,8 +477,9 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_water = 5
+		sr_oxygen = 5
+		sr_nitrogen = 5
 	}
 	
 	condition = {
@@ -500,8 +495,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbon = 2
+		sr_nitrogen = 5
+		sr_oxygen = 5
+		sr_water = 5
 	}
 	
 	condition = {
@@ -517,8 +514,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbon = 1
+		sr_nitrogen = 5
+		sr_oxygen = 5
+		sr_water = 3
 	}
 	
 	condition = {
@@ -534,8 +533,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 1
+		sr_carbondioxide = 1
 	}
 	
 	condition = {
@@ -551,8 +552,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbondioxide = 4
+		sr_nitrogen = 5
+		sr_oxygen = 5
+		sr_water = 1
 	}
 	
 	condition = {
@@ -568,8 +571,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_water = 4
+		sr_carbondioxide = 3
+		sr_nitrogen = 5
+		sr_oxygen = 5
 	}
 	
 	condition = {
@@ -587,8 +592,9 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_water = 4
+		sr_oxygen = 5
+		sr_nitrogen = 5
 	}
 	
 	condition = {
@@ -604,8 +610,9 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_nitrogen = 5
+		sr_oxygen = 5
+		sr_water = 5
 	}
 	
 	condition = {
@@ -621,8 +628,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbon = 5
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 4
 	}
 	
 	condition = {
@@ -638,8 +647,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbon = 2
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 3
 	}
 	
 	condition = {
@@ -655,8 +666,9 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 1
 	}
 	
 	condition = {
@@ -672,8 +684,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbondioxide = 2
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 1
 	}
 	
 	condition = {
@@ -689,8 +703,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbondioxide = 2
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 3
 	}
 	
 	condition = {
@@ -708,8 +724,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbondioxide = 2
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 3
 	}
 	
 	condition = {
@@ -725,8 +743,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbondioxide = 2
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 3
 	}
 	
 	condition = {
@@ -742,8 +762,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbon = 2
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 4
 	}
 	
 	condition = {
@@ -759,8 +781,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbon = 2
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 3
 	}
 	
 	condition = {
@@ -776,8 +800,9 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 1
 	}
 	
 	condition = {
@@ -793,8 +818,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbondioxide = 4
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 1
 	}
 	
 	condition = {
@@ -810,8 +837,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbondioxide = 2
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 3
 	}
 	
 	condition = {
@@ -829,8 +858,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbondioxide = 4
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 3
 	}
 	
 	condition = {
@@ -846,8 +877,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbondioxide = 4
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 4
 	}
 	
 	condition = {
@@ -863,8 +896,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbondioxide = 2
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 4
 	}
 	
 	condition = {
@@ -880,8 +915,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbondioxide = 3
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 3
 	}
 	
 	condition = {
@@ -897,8 +934,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbondioxide = 4
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 1
 	}
 	
 	condition = {
@@ -914,8 +953,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbondioxide = 6
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 1
 	}
 	
 	condition = {
@@ -931,8 +972,10 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbondioxide = 6
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 4
 	}
 	
 	condition = {
@@ -951,8 +994,10 @@ terraform_link = {
 	energy = 2500
 	minerals = 250
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbon = 4
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 3
 	}
 	
 	condition = {
@@ -969,8 +1014,10 @@ terraform_link = {
 	energy = 2500
 #	minerals = 300
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbon = 4
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 4
 	}
 	
 	condition = {
@@ -987,8 +1034,10 @@ terraform_link = {
 	energy = 2500
 #	minerals = 600
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbon = 6
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 3
 	}
 	
 	condition = {
@@ -1005,8 +1054,10 @@ terraform_link = {
 	energy = 2500
 #	minerals = 500
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbon = 5
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 3
 	}
 	
 	condition = {
@@ -1023,8 +1074,10 @@ terraform_link = {
 	energy = 2500
 #	minerals = 100
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbon = 4
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 1
 	}
 	
 	condition = {
@@ -1041,8 +1094,10 @@ terraform_link = {
 	energy = 2500
 #	minerals = 50
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbon = 2
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 1
 	}
 	
 	condition = {
@@ -1059,8 +1114,10 @@ terraform_link = {
 	energy = 2500
 #	minerals = 100
 	resources = {
-		sr_terraform_gases = 0
-		sr_terraform_liquids = 0
+		sr_carbon = 2
+		sr_oxygen = 5
+		sr_nitrogen = 5
+		sr_water = 4
 	}
 	
 	condition = {
