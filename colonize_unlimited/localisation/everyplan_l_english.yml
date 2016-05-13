@@ -4,7 +4,7 @@
  pc_barren_tile_desc: "Lifeless terrain with no natural air supply."
  tech_artificial_atmosphere:0 "Artificial Atmospheres"
  tech_artificial_atmosphere_desc:1 "Recent breakthroughs in humidity regulators and chemical dispersal units, combined with gases from other planets, will allow us to create an atmosphere from scratch that could allow habitability where needed.\n\n"
- TECH_UNLOCK_TERRAFORMING_ART_ATMOSPHERE_TITLE: "§HUnlocks Feature:§! Artificial Atmospheres" 
+ TECH_UNLOCK_TERRAFORMING_ART_ATMOSPHERE_TITLE: "§HUnlocks Feature:§! Artificial Atmospheres"
  TECH_UNLOCK_TERRAFORMING_ART_ATMOSPHERE_DESC: "§HArtificial Atmospheres§!\nAllows us to set up artificial atmospheres on barren worlds, in turn allowing us to terraform them."
  pc_toxic_tile: "Toxic Terrain"
  pc_toxic_tile_desc: "Lifeless terrain hidden under a thick layer of toxic gases."
@@ -58,4 +58,5 @@
  tech_hydrogen_burning_desc:1 "By burning hydrogen mined from gas giants with atmosphere oxygen, we can get water to terraform other planets."
  tech_artificial_diamonds:0 "Synthetic Diamonds"
  tech_artificial_diamonds_desc:1 "By splitting the carbon from the dioxide in carbondioxide, we get carbon in it's purest form, allowing us to crystallize it into diamonds useful for cooling down planets if sent into the atmosphere."
- 
+ tech_hydroburning: 0 "Hydroburning"
+ tech_hydroburning_desc: 0 "Please fill this in!"
