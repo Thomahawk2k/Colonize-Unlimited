@@ -2,6 +2,7 @@
 
 Colonize Unlimited© is a mod (:P) designed to allow the player greater freedom in their colonization, especially mid-to-late game. Instead of being limited to planets that already house life, one with Colonize Unlimited© will be able to colonize every rock-based planet, provided they have toasters . In addition, the player with Colonize Unlimited© will allow the player to make uninhabitable (rock-based) planets habitable using terraforming techniques in the late game.
 
+Get it on Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=682582076
 
 # Features
 
