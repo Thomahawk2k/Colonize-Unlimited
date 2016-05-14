@@ -2079,36 +2079,36 @@ tech_aura_quantum_destabilizer = {
 	}
 }
 
-tech_hydroburning = {
-	area = physics
-	cost = @tier2cost4
-	tier = 1
-	category = { particles }
+#tech_hydroburning = {
+#	area = physics
+#	cost = @tier2cost4
+#	tier = 1
+#	category = { particles }
 #	ai_update_type = military	
-	prerequisites = { "tech_fission_power" }
-	weight = @tier3weight1
-	
-	## Allows Hydrofusion plant
-
-	weight_modifier = {
-		factor = 1.5
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_industry"
-			}
-		}
-	}
-	
-	ai_weight = {
-		factor = 3 #important component
-		modifier = {
-			factor = 1.25
-			research_leader = {
-				area = physics
-				has_trait = "leader_trait_expertise_industry"
-			}
-		}
-	}
-}
+#	prerequisites = { "tech_fission_power" }
+#	weight = @tier3weight1
+#	
+#	## Allows Hydrofusion plant
+#
+#	weight_modifier = {
+#		factor = 1.5
+#		modifier = {
+#			factor = 1.25
+#			research_leader = {
+#				area = physics
+#				has_trait = "leader_trait_expertise_industry"
+#			}
+#		}
+#	}
+#	
+#	ai_weight = {
+#		factor = 3 #important component
+#		modifier = {
+#			factor = 1.25
+#			research_leader = {
+#				area = physics
+#				has_trait = "leader_trait_expertise_industry"
+#			}
+#		}
+#	}
+#}
