@@ -49,7 +49,7 @@ sr_water = {
 
 sr_carbon_dioxide = {
 	AI_category = strategic_resource
-	prerequisites = { "tech_atmosphere_farming" }
+	prerequisites = { "tech_terrestrial_sculpting" }
 	tradable = yes
 	is_rare = yes
 	
