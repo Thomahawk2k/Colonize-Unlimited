@@ -1133,7 +1133,7 @@ tech_basic_industry = {
 }
 
 tech_atmosphere_farming = {
-	cost = tier2cost4
+	cost = @tier2cost4
 	area = engineering
 	category = { industry }
 	tier = 2
@@ -1163,7 +1163,7 @@ tech_atmosphere_farming = {
 }
 
 tech_atmosphere_farming_2 = {
-	cost = tier3cost2
+	cost = @tier3cost2
 	area = engineering
 	category = { industry }
 	tier = 2
@@ -1193,7 +1193,7 @@ tech_atmosphere_farming_2 = {
 }
 
 tech_atmosphere_mining = {
-	cost = tier2cost4
+	cost = @tier2cost4
 	area = engineering
 	category = { industry }
 	tier = 2
@@ -1223,7 +1223,7 @@ tech_atmosphere_mining = {
 }
 
 tech_hydrogen_burning = {
-	cost = tier2cost4
+	cost = @tier2cost4
 	area = engineering
 	category = { industry }
 	tier = 2
@@ -1253,7 +1253,7 @@ tech_hydrogen_burning = {
 }
 
 tech_artificial_diamonds = {
-	cost = tier2cost4
+	cost = @tier2cost4
 	area = engineering
 	category = { industry }
 	tier = 2
