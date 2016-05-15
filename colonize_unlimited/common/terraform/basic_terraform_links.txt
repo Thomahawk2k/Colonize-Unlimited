@@ -8,13 +8,13 @@
 	# to = "pc_tundra"			# terraform from pc_arctic to pc_tundra
 
 	# duration = 10				# How long it will take in days. Leave this blank to use default value ( TERRAFORM_DEFAULT_DURATION_DAYS in defines )
-	
+
 	# # cost
 	# energy = 30
 	# resources = {
 		# sr_terraform_liquids = 2	#will cost 2 sr_terraform_liquids, you can use any strategic resource here
 	# }
-	
+
 	# # normal and-trigger
 	# # Scope is a country scope
 	# # from scope is a planet scope
@@ -27,13 +27,13 @@
 terraform_link = {
 	from = "pc_arctic"
 	to = "pc_ocean"
-	
+
 	#cost
 	energy = 1500
 	resources = {
-		sr_carbondioxide = 2
+		sr_carbon_dioxide = 2
 	}
-	
+
 	condition = {
 		if = {
 			limit = {
@@ -54,13 +54,13 @@ terraform_link = {
 terraform_link = {
 	from = "pc_ocean"
 	to = "pc_arctic"
-	
+
 	#cost
 	energy = 1500
 	resources = {
 		sr_carbon = 2
 	}
-	
+
 	condition = {
 		if = {
 			limit = {
@@ -81,7 +81,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_tundra"
 	to = "pc_arctic"
-	
+
 	energy = 1500
 	resources = {
 		sr_carbon = 1
@@ -108,10 +108,10 @@ terraform_link = {
 terraform_link = {
 	from = "pc_arctic"
 	to = "pc_tundra"
-	
+
 	energy = 1500
 	resources = {
-		sr_carbondioxide = 1
+		sr_carbon_dioxide = 1
 	}
 
 	condition = {
@@ -134,12 +134,12 @@ terraform_link = {
 terraform_link = {
 	from = "pc_tundra"
 	to = "pc_arid"
-	
+
 	energy = 1500
 	resources = {
-		sr_carbondioxide = 1
+		sr_carbon_dioxide = 1
 	}
-	
+
 	condition = {
 		if = {
 			limit = {
@@ -160,12 +160,12 @@ terraform_link = {
 terraform_link = {
 	from = "pc_arid"
 	to = "pc_tundra"
-	
+
 	energy = 1500
 	resources = {
 		sr_carbon = 1
 	}
-	
+
 	condition = {
 		if = {
 			limit = {
@@ -186,12 +186,12 @@ terraform_link = {
 terraform_link = {
 	from = "pc_arid"
 	to = "pc_desert"
-	
+
 	energy = 1500
 	resources = {
 		sr_dioxide = 3
 	}
-	
+
 	condition = {
 		if = {
 			limit = {
@@ -212,12 +212,12 @@ terraform_link = {
 terraform_link = {
 	from = "pc_desert"
 	to = "pc_arid"
-	
+
 	energy = 1500
 	resources = {
 		sr_carbon = 3
 	}
-	
+
 	condition = {
 		if = {
 			limit = {
@@ -238,7 +238,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_desert"
 	to = "pc_tropical"
-	
+
 	energy = 1500
 	resources = {
 		sr_water = 2
@@ -264,10 +264,10 @@ terraform_link = {
 terraform_link = {
 	from = "pc_tropical"
 	to = "pc_desert"
-	
+
 	energy = 1500
 	resources = {
-		sr_carbondioxide = 2
+		sr_carbon_dioxide = 2
 	}
 
 	condition = {
@@ -290,12 +290,12 @@ terraform_link = {
 terraform_link = {
 	from = "pc_tropical"
 	to = "pc_ocean"
-	
+
 	energy = 1500
 	resources = {
 		sr_water = 2
 	}
-	
+
 	condition = {
 		if = {
 			limit = {
@@ -316,12 +316,12 @@ terraform_link = {
 terraform_link = {
 	from = "pc_ocean"
 	to = "pc_tropical"
-	
+
 	energy = 1500
 	resources = {
 		sr_water = 2
 	}
-	
+
 	condition = {
 		if = {
 			limit = {
@@ -342,7 +342,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_continental"
 	to = "pc_ocean"
-	
+
 	energy = 1500
 	resources = {
 		sr_water = 1
@@ -368,10 +368,10 @@ terraform_link = {
 terraform_link = {
 	from = "pc_ocean"
 	to = "pc_continental"
-	
+
 	energy = 1500
 	resources = {
-		sr_carbondioxide = 1
+		sr_carbon_dioxide = 1
 	}
 
 	condition = {
@@ -394,13 +394,13 @@ terraform_link = {
 terraform_link = {
 	from = "pc_continental"
 	to = "pc_tropical"
-	
+
 	energy = 1500
 	resources = {
-		sr_carbondioxide = 1
+		sr_carbon_dioxide = 1
 		sr_water = 1
 	}
-	
+
 	condition = {
 		if = {
 			limit = {
@@ -421,12 +421,12 @@ terraform_link = {
 terraform_link = {
 	from = "pc_tropical"
 	to = "pc_continental"
-	
+
 	energy = 1500
 	resources = {
 		sr_carbon = 1
 	}
-	
+
 	condition = {
 		if = {
 			limit = {
@@ -454,16 +454,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_barren"
 	to = "pc_continental"
-	
+
 	#cost
 	energy = 2500
 	resources = {
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 4
-		sr_carbondioxide = 1
+		sr_carbon_dioxide = 1
 	}
-	
+
 	condition = {
 		has_technology = "tech_artificial_atmosphere"
 	}
@@ -473,7 +473,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_barren"
 	to = "pc_ocean"
-	
+
 	#cost
 	energy = 2500
 	resources = {
@@ -481,7 +481,7 @@ terraform_link = {
 		sr_oxygen = 5
 		sr_nitrogen = 5
 	}
-	
+
 	condition = {
 		has_technology = "tech_artificial_atmosphere"
 	}
@@ -491,7 +491,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_barren"
 	to = "pc_arctic"
-	
+
 	#cost
 	energy = 2500
 	resources = {
@@ -500,7 +500,7 @@ terraform_link = {
 		sr_oxygen = 5
 		sr_water = 5
 	}
-	
+
 	condition = {
 		has_technology = "tech_artificial_atmosphere"
 	}
@@ -510,7 +510,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_barren"
 	to = "pc_tundra"
-	
+
 	#cost
 	energy = 2500
 	resources = {
@@ -519,7 +519,7 @@ terraform_link = {
 		sr_oxygen = 5
 		sr_water = 3
 	}
-	
+
 	condition = {
 		has_technology = "tech_artificial_atmosphere"
 	}
@@ -529,16 +529,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_barren"
 	to = "pc_arid"
-	
+
 	#cost
 	energy = 2500
 	resources = {
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 1
-		sr_carbondioxide = 1
+		sr_carbon_dioxide = 1
 	}
-	
+
 	condition = {
 		has_technology = "tech_artificial_atmosphere"
 	}
@@ -548,16 +548,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_barren"
 	to = "pc_desert"
-	
+
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbondioxide = 4
+		sr_carbon_dioxide = 4
 		sr_nitrogen = 5
 		sr_oxygen = 5
 		sr_water = 1
 	}
-	
+
 	condition = {
 		has_technology = "tech_artificial_atmosphere"
 	}
@@ -567,16 +567,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_barren"
 	to = "pc_tropical"
-	
+
 	#cost
 	energy = 2500
 	resources = {
 		sr_water = 4
-		sr_carbondioxide = 3
+		sr_carbon_dioxide = 3
 		sr_nitrogen = 5
 		sr_oxygen = 5
 	}
-	
+
 	condition = {
 		has_technology = "tech_artificial_atmosphere"
 	}
@@ -588,7 +588,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_toxic"
 	to = "pc_continental"
-	
+
 	#cost
 	energy = 2500
 	resources = {
@@ -596,7 +596,7 @@ terraform_link = {
 		sr_oxygen = 5
 		sr_nitrogen = 5
 	}
-	
+
 	condition = {
 		has_technology = "tech_stimulated_solar_winds"
 	}
@@ -606,7 +606,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_toxic"
 	to = "pc_ocean"
-	
+
 	#cost
 	energy = 2500
 	resources = {
@@ -614,7 +614,7 @@ terraform_link = {
 		sr_oxygen = 5
 		sr_water = 5
 	}
-	
+
 	condition = {
 		has_technology = "tech_stimulated_solar_winds"
 	}
@@ -624,7 +624,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_toxic"
 	to = "pc_arctic"
-	
+
 	#cost
 	energy = 2500
 	resources = {
@@ -633,7 +633,7 @@ terraform_link = {
 		sr_nitrogen = 5
 		sr_water = 4
 	}
-	
+
 	condition = {
 		has_technology = "tech_stimulated_solar_winds"
 	}
@@ -643,7 +643,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_toxic"
 	to = "pc_tundra"
-	
+
 	#cost
 	energy = 2500
 	resources = {
@@ -652,7 +652,7 @@ terraform_link = {
 		sr_nitrogen = 5
 		sr_water = 3
 	}
-	
+
 	condition = {
 		has_technology = "tech_stimulated_solar_winds"
 	}
@@ -662,7 +662,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_toxic"
 	to = "pc_arid"
-	
+
 	#cost
 	energy = 2500
 	resources = {
@@ -670,7 +670,7 @@ terraform_link = {
 		sr_nitrogen = 5
 		sr_water = 1
 	}
-	
+
 	condition = {
 		has_technology = "tech_stimulated_solar_winds"
 	}
@@ -680,16 +680,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_toxic"
 	to = "pc_desert"
-	
+
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbondioxide = 2
+		sr_carbon_dioxide = 2
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 1
 	}
-	
+
 	condition = {
 		has_technology = "tech_stimulated_solar_winds"
 	}
@@ -699,16 +699,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_toxic"
 	to = "pc_tropical"
-	
+
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbondioxide = 2
+		sr_carbon_dioxide = 2
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 3
 	}
-	
+
 	condition = {
 		has_technology = "tech_stimulated_solar_winds"
 	}
@@ -720,16 +720,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_barren_cold"
 	to = "pc_continental"
-	
+
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbondioxide = 2
+		sr_carbon_dioxide = 2
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 3
 	}
-	
+
 	condition = {
 		has_technology = "tech_artificial_atmosphere"
 	}
@@ -739,16 +739,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_barren_cold"
 	to = "pc_ocean"
-	
+
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbondioxide = 2
+		sr_carbon_dioxide = 2
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 3
 	}
-	
+
 	condition = {
 		has_technology = "tech_artificial_atmosphere"
 	}
@@ -758,7 +758,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_barren_cold"
 	to = "pc_arctic"
-	
+
 	#cost
 	energy = 2500
 	resources = {
@@ -767,7 +767,7 @@ terraform_link = {
 		sr_nitrogen = 5
 		sr_water = 4
 	}
-	
+
 	condition = {
 		has_technology = "tech_artificial_atmosphere"
 	}
@@ -777,7 +777,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_barren_cold"
 	to = "pc_tundra"
-	
+
 	#cost
 	energy = 2500
 	resources = {
@@ -786,7 +786,7 @@ terraform_link = {
 		sr_nitrogen = 5
 		sr_water = 3
 	}
-	
+
 	condition = {
 		has_technology = "tech_artificial_atmosphere"
 	}
@@ -796,7 +796,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_barren_cold"
 	to = "pc_arid"
-	
+
 	#cost
 	energy = 2500
 	resources = {
@@ -804,7 +804,7 @@ terraform_link = {
 		sr_nitrogen = 5
 		sr_water = 1
 	}
-	
+
 	condition = {
 		has_technology = "tech_artificial_atmosphere"
 	}
@@ -814,16 +814,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_barren_cold"
 	to = "pc_desert"
-	
+
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbondioxide = 4
+		sr_carbon_dioxide = 4
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 1
 	}
-	
+
 	condition = {
 		has_technology = "tech_artificial_atmosphere"
 	}
@@ -833,16 +833,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_barren_cold"
 	to = "pc_tropical"
-	
+
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbondioxide = 2
+		sr_carbon_dioxide = 2
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 3
 	}
-	
+
 	condition = {
 		has_technology = "tech_artificial_atmosphere"
 	}
@@ -854,16 +854,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_frozen"
 	to = "pc_continental"
-	
+
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbondioxide = 4
+		sr_carbon_dioxide = 4
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 3
 	}
-	
+
 	condition = {
 		has_technology = "tech_extreme_greenhouse"
 	}
@@ -873,16 +873,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_frozen"
 	to = "pc_ocean"
-	
+
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbondioxide = 4
+		sr_carbon_dioxide = 4
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 4
 	}
-	
+
 	condition = {
 		has_technology = "tech_extreme_greenhouse"
 	}
@@ -892,16 +892,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_frozen"
 	to = "pc_arctic"
-	
+
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbondioxide = 2
+		sr_carbon_dioxide = 2
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 4
 	}
-	
+
 	condition = {
 		has_technology = "tech_extreme_greenhouse"
 	}
@@ -911,16 +911,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_frozen"
 	to = "pc_tundra"
-	
+
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbondioxide = 3
+		sr_carbon_dioxide = 3
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 3
 	}
-	
+
 	condition = {
 		has_technology = "tech_extreme_greenhouse"
 	}
@@ -930,16 +930,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_frozen"
 	to = "pc_arid"
-	
+
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbondioxide = 4
+		sr_carbon_dioxide = 4
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 1
 	}
-	
+
 	condition = {
 		has_technology = "tech_extreme_greenhouse"
 	}
@@ -949,16 +949,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_frozen"
 	to = "pc_desert"
-	
+
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbondioxide = 6
+		sr_carbon_dioxide = 6
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 1
 	}
-	
+
 	condition = {
 		has_technology = "tech_extreme_greenhouse"
 	}
@@ -968,16 +968,16 @@ terraform_link = {
 terraform_link = {
 	from = "pc_frozen"
 	to = "pc_tropical"
-	
+
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbondioxide = 6
+		sr_carbon_dioxide = 6
 		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 4
 	}
-	
+
 	condition = {
 		has_technology = "tech_extreme_greenhouse"
 	}
@@ -989,7 +989,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_molten"
 	to = "pc_continental"
-	
+
 	#cost
 	energy = 2500
 	minerals = 250
@@ -999,7 +999,7 @@ terraform_link = {
 		sr_nitrogen = 5
 		sr_water = 3
 	}
-	
+
 	condition = {
 		has_technology = "tech_high_alt_solarprotection"
 	}
@@ -1009,7 +1009,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_molten"
 	to = "pc_ocean"
-	
+
 	#cost
 	energy = 2500
 #	minerals = 300
@@ -1019,7 +1019,7 @@ terraform_link = {
 		sr_nitrogen = 5
 		sr_water = 4
 	}
-	
+
 	condition = {
 		has_technology = "tech_high_alt_solarprotection"
 	}
@@ -1029,7 +1029,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_molten"
 	to = "pc_arctic"
-	
+
 	#cost
 	energy = 2500
 #	minerals = 600
@@ -1039,7 +1039,7 @@ terraform_link = {
 		sr_nitrogen = 5
 		sr_water = 3
 	}
-	
+
 	condition = {
 		has_technology = "tech_high_alt_solarprotection"
 	}
@@ -1049,7 +1049,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_molten"
 	to = "pc_tundra"
-	
+
 	#cost
 	energy = 2500
 #	minerals = 500
@@ -1059,7 +1059,7 @@ terraform_link = {
 		sr_nitrogen = 5
 		sr_water = 3
 	}
-	
+
 	condition = {
 		has_technology = "tech_high_alt_solarprotection"
 	}
@@ -1069,7 +1069,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_molten"
 	to = "pc_arid"
-	
+
 	#cost
 	energy = 2500
 #	minerals = 100
@@ -1079,7 +1079,7 @@ terraform_link = {
 		sr_nitrogen = 5
 		sr_water = 1
 	}
-	
+
 	condition = {
 		has_technology = "tech_high_alt_solarprotection"
 	}
@@ -1089,7 +1089,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_molten"
 	to = "pc_desert"
-	
+
 	#cost
 	energy = 2500
 #	minerals = 50
@@ -1099,7 +1099,7 @@ terraform_link = {
 		sr_nitrogen = 5
 		sr_water = 1
 	}
-	
+
 	condition = {
 		has_technology = "tech_high_alt_solarprotection"
 	}
@@ -1109,7 +1109,7 @@ terraform_link = {
 terraform_link = {
 	from = "pc_molten"
 	to = "pc_tropical"
-	
+
 	#cost
 	energy = 2500
 #	minerals = 100
@@ -1119,7 +1119,7 @@ terraform_link = {
 		sr_nitrogen = 5
 		sr_water = 4
 	}
-	
+
 	condition = {
 		has_technology = "tech_high_alt_solarprotection"
 	}
