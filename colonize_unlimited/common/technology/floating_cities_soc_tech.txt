@@ -1,3 +1,5 @@
+@tier2cost3 = 1500
+
 tech_floating_cities = {
 	cost = @tier2cost3
 	area = society
