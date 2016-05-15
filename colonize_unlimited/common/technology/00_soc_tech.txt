@@ -5245,3 +5245,35 @@ tech_will_to_power = {
 # Other
 # ##################
 
+#Enclosed Biospheres
+tech_art_biosphere = {
+	cost = @tier2cost1
+	area = society
+	tier = 2
+	category = { biology }	
+	prerequisites = { "tech_droid_worker" }
+	weight = @tier2weight1
+	
+	# unlocks enclosed biospheres
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}	
+	
+	ai_weight = {
+		factor = 1.5
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_biology"
+			}
+		}
+	}
+}

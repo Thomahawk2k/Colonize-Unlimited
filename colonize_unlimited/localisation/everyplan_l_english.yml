@@ -59,6 +59,11 @@
  tech_artificial_diamonds_desc:1 "By splitting the carbon from the dioxide in carbondioxide, we get carbon in it's purest form, allowing us to crystallize it into diamonds useful for cooling down planets if sent into the atmosphere."
  tech_hydroburning: 0 "Hydroburning"
  tech_hydroburning_desc: 0 "Please fill this in!"
+ tech_art_biosphere:0 "Enclosed Biospheres"
+ tech_art_biosphere_desc:1 "By setting up enclosed biospheres on uninhabitable planets we can allow organics to live there and execute operations that would otherwise only be possible with robots."
+ building_art_biosphere:0 "Enclosed Biosphere Center"
+ building_art_biosphere_desc:0 "Central region where the enclosed biosphere on $PLANET$ is being regulated and maintained."
  #For Water Extractor
  building_water_extractor:0 "Liquid Water Extractor"
  requires_building_capital_and_not_water_void:0 "§RRequires §Y$building_capital_1$§! on a planet with water. (not a desert, arid, gas giant, molten, barren, toxic or tomb).§!"
+ 
