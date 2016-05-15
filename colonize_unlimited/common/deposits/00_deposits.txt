@@ -8,7 +8,7 @@
 #NULL DEPOSIT MUST EXIST
 d_null_deposit = {
 	is_null = yes
-	
+
 	drop_weight = {
 		weight = 50
 		modifier = {
@@ -17,7 +17,7 @@ d_null_deposit = {
 				OR = {
 					is_planet_class = pc_black_hole
 					is_planet_class = pc_neutron_star
-					is_planet_class = pc_pulsar				
+					is_planet_class = pc_pulsar
 				}
 			}
 		}
@@ -31,8 +31,6 @@ d_null_deposit = {
 			weight = 100
 			planet = {
 				OR = {
-#					is_planet_class = pc_barren
-#					is_planet_class = pc_barren_cold
 					is_planet_class = pc_a_star
 					is_planet_class = pc_b_star
 					is_planet_class = pc_f_star
@@ -56,7 +54,7 @@ d_mineral_deposit = {
 	orbital_weight = {
 		weight = 10
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -100,7 +98,7 @@ d_rich_mineral_deposit = {
 	orbital_weight = {
 		weight = 20
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -154,7 +152,7 @@ d_vast_mineral_deposit = {
 	orbital_weight = {
 		weight = 30
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -201,7 +199,7 @@ d_immense_mineral_deposit = {
 	orbital_weight = {
 		weight = 50
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -228,7 +226,7 @@ d_immense_mineral_deposit = {
 					}
 					OR = {
 						has_planet_modifier = "pm_ultra_rich"
-						has_planet_modifier = "pm_mineral_rich"					
+						has_planet_modifier = "pm_mineral_rich"
 					}
 				}
 			}
@@ -268,7 +266,7 @@ d_mineral_energy_deposit = {
 	orbital_weight = {
 		weight = 20
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -301,7 +299,7 @@ d_mineral_food_deposit = {
 		minerals = 1
 	}
 	is_orbital_slot = no
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -329,7 +327,7 @@ d_rich_mineral_food_deposit = {
 		minerals = 2
 	}
 	is_orbital_slot = no
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -357,7 +355,7 @@ d_rich_food_mineral_deposit = {
 		minerals = 1
 	}
 	is_orbital_slot = no
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -389,7 +387,7 @@ d_energy_deposit = {
 	orbital_weight = {
 		weight = 10
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -427,7 +425,7 @@ d_rich_energy_deposit = {
 	orbital_weight = {
 		weight = 20
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -484,7 +482,7 @@ d_vast_energy_deposit = {
 	orbital_weight = {
 		weight = 30
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -515,7 +513,7 @@ d_immense_energy_deposit = {
 	orbital_weight = {
 		weight = 50
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -534,7 +532,7 @@ d_immense_energy_deposit = {
 d_farmland_deposit = {
 	resources = { food = 1 }
 	is_orbital_slot = no
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -564,7 +562,7 @@ d_farmland_deposit = {
 d_rich_farmland_deposit = {
 	resources = { food = 2 }
 	is_orbital_slot = no
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -594,7 +592,7 @@ d_rich_farmland_deposit = {
 d_vast_farmland_deposit = {
 	resources = { food = 3 }
 	is_orbital_slot = no
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -627,11 +625,11 @@ d_vast_farmland_deposit = {
 
 d_society_deposit = {
 	resources = { society_research = 1 }
-	station = shipclass_research_station 
+	station = shipclass_research_station
 	orbital_weight = {
 		weight = 10
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -669,11 +667,11 @@ d_society_deposit = {
 
 d_rich_society_deposit = {
 	resources = { society_research = 2 }
-	station = shipclass_research_station 
+	station = shipclass_research_station
 	orbital_weight = {
 		weight = 20
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -716,11 +714,11 @@ d_rich_society_deposit = {
 
 d_vast_society_deposit = {
 	resources = { society_research = 3 }
-	station = shipclass_research_station 
+	station = shipclass_research_station
 	orbital_weight = {
 		weight = 30
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -746,13 +744,13 @@ d_vast_society_deposit = {
 						is_planet_class = pc_tundra
 						is_planet_class = pc_arctic
 					}
-					OR = {					
+					OR = {
 						has_planet_modifier = "pm_titanic_life"
 						has_planet_modifier = "pm_dangerous_wildlife"
 						has_planet_modifier = "pm_natural_beauty"
 						has_planet_modifier = "pm_atmospheric_aphrodisiac"
 						has_planet_modifier = "pm_atmospheric_hallucinogen"
-						has_planet_modifier = "pm_lush"	
+						has_planet_modifier = "pm_lush"
 					}
 				}
 			}
@@ -766,13 +764,13 @@ d_vast_society_deposit = {
 		modifier = {
 			factor = 3
 			planet = {
-				OR = {					
+				OR = {
 					has_planet_modifier = "pm_titanic_life"
 					has_planet_modifier = "pm_dangerous_wildlife"
 					has_planet_modifier = "pm_natural_beauty"
 					has_planet_modifier = "pm_atmospheric_aphrodisiac"
 					has_planet_modifier = "pm_atmospheric_hallucinogen"
-					has_planet_modifier = "pm_lush"	
+					has_planet_modifier = "pm_lush"
 				}
 			}
 		}
@@ -785,7 +783,7 @@ d_immense_society_deposit = {
 	orbital_weight = {
 		weight = 50
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -808,13 +806,13 @@ d_immense_society_deposit = {
 						is_planet_class = pc_tundra
 						is_planet_class = pc_arctic
 					}
-					OR = {					
+					OR = {
 						has_planet_modifier = "pm_titanic_life"
 						has_planet_modifier = "pm_dangerous_wildlife"
 						has_planet_modifier = "pm_natural_beauty"
 						has_planet_modifier = "pm_atmospheric_aphrodisiac"
 						has_planet_modifier = "pm_atmospheric_hallucinogen"
-						has_planet_modifier = "pm_lush"	
+						has_planet_modifier = "pm_lush"
 					}
 				}
 			}
@@ -830,7 +828,7 @@ d_immense_society_deposit = {
 					has_deposit = "d_immense_engineering_deposit"
 					has_strategic_resource = yes
 				}
-			}		
+			}
 		}
 	}
 }
@@ -841,11 +839,11 @@ d_immense_society_deposit = {
 
 d_physics_deposit = {
 	resources = { physics_research = 1 }
-	station = shipclass_research_station 
+	station = shipclass_research_station
 	orbital_weight = {
 		weight = 10
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -873,11 +871,11 @@ d_physics_deposit = {
 
 d_rich_physics_deposit = {
 	resources = { physics_research = 2 }
-	station = shipclass_research_station 
+	station = shipclass_research_station
 	orbital_weight = {
 		weight = 20
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -915,11 +913,11 @@ d_rich_physics_deposit = {
 
 d_vast_physics_deposit = {
 	resources = { physics_research = 3 }
-	station = shipclass_research_station 
+	station = shipclass_research_station
 	orbital_weight = {
 		weight = 30
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -981,7 +979,7 @@ d_immense_physics_deposit = {
 	orbital_weight = {
 		weight = 50
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1033,7 +1031,7 @@ d_immense_physics_deposit = {
 					has_deposit = "d_immense_engineering_deposit"
 					has_strategic_resource = yes
 				}
-			}		
+			}
 		}
 	}
 }
@@ -1045,11 +1043,11 @@ d_immense_physics_deposit = {
 
 d_engineering_deposit = {
 	resources = { engineering_research = 1 }
-	station = shipclass_research_station 
+	station = shipclass_research_station
 	orbital_weight = {
 		weight = 10
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1088,11 +1086,11 @@ d_engineering_deposit = {
 
 d_rich_engineering_deposit = {
 	resources = { engineering_research = 2 }
-	station = shipclass_research_station 
+	station = shipclass_research_station
 	orbital_weight = {
 		weight = 20
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1125,11 +1123,11 @@ d_rich_engineering_deposit = {
 
 d_vast_engineering_deposit = {
 	resources = { engineering_research = 3 }
-	station = shipclass_research_station 
+	station = shipclass_research_station
 	orbital_weight = {
 		weight = 30
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1189,7 +1187,7 @@ d_immense_engineering_deposit = {
 	orbital_weight = {
 		weight = 50
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1358,7 +1356,7 @@ d_garanthium_deposit = {
 	orbital_weight = {
 		weight = @clusterOrbitalWeight
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1386,7 +1384,7 @@ d_garanthium_deposit = {
 }
 
 d_lythuric_gas_deposit = {
-	resources = { 
+	resources = {
 		physics_research = 1
 		society_research = 1
 		sr_lythuric = 1
@@ -1395,7 +1393,7 @@ d_lythuric_gas_deposit = {
 	orbital_weight = {
 		weight = @clusterOrbitalWeight
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1428,11 +1426,11 @@ d_engos_deposit = {
 		physics_research = 1
 		sr_engos = 1
 	}
-	station = shipclass_research_station	
+	station = shipclass_research_station
 	orbital_weight = {
 		weight = @clusterOrbitalWeight
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1466,7 +1464,7 @@ d_teldar_deposit = {
 	orbital_weight = {
 		weight = @clusterOrbitalWeight
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1475,7 +1473,7 @@ d_teldar_deposit = {
 				AND = {
 					OR = {
 						is_asteroid = yes
-						is_planet_class = pc_frozen					
+						is_planet_class = pc_frozen
 					}
 					has_strategic_resource = no
 				}
@@ -1507,7 +1505,7 @@ d_pitharan_deposit = {
 	orbital_weight = {
 		weight = @clusterOrbitalWeight
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1540,7 +1538,7 @@ d_orillium_deposit = {
 	orbital_weight = {
 		weight = @clusterOrbitalWeight
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1566,7 +1564,7 @@ d_orillium_deposit = {
 #################
 
 d_neutronium_deposit = {
-	resources = { 
+	resources = {
 		engineering_research = 5
 		sr_neutronium = 1
 	}
@@ -1574,7 +1572,7 @@ d_neutronium_deposit = {
 	orbital_weight = {
 		weight = 100
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1611,7 +1609,7 @@ d_neutronium_deposit = {
 }
 
 d_living_metal_deposit = {
-	resources = { 
+	resources = {
 		engineering_research = 5
 		sr_living_metal = 1
 	}
@@ -1619,7 +1617,7 @@ d_living_metal_deposit = {
 	orbital_weight = {
 		weight = 100
 	}
-	
+
 	drop_weight = {
 		weight = 0
 	}
@@ -1630,11 +1628,11 @@ d_dark_matter_deposit = {
 		physics_research = 5
 		sr_dark_matter = 1
 	}
-	station = shipclass_research_station 
+	station = shipclass_research_station
 	orbital_weight = {
 		weight = 100
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1670,14 +1668,14 @@ d_betharian_deposit = {
 	orbital_weight = {
 		weight = 80
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
 			factor = 0.10
 			planet = {
 				is_inside_nebula = no
-			}			
+			}
 		}
 		modifier = {
 			weight = 1
@@ -1719,7 +1717,7 @@ d_alien_pets_deposit = {
 	orbital_weight = {
 		weight = 60
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1767,7 +1765,7 @@ d_alien_pets_deposit = {
 }
 
 d_satramene_deposit = {
-	resources = { 
+	resources = {
 		energy = 4
 		sr_satramene = 1
 	}
@@ -1775,7 +1773,7 @@ d_satramene_deposit = {
 	orbital_weight = {
 		weight = 60
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1816,7 +1814,7 @@ d_satramene_deposit = {
 }
 
 d_zro_deposit = {
-	resources = { 
+	resources = {
 		society_research = 2
 		physics_research = 2
 		sr_zro = 1
@@ -1825,7 +1823,7 @@ d_zro_deposit = {
 	orbital_weight = {
 		weight = 200
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -1835,7 +1833,7 @@ d_zro_deposit = {
 					is_planet_class = pc_gas_giant
 					is_inside_nebula = yes
 				}
-			}			
+			}
 		}
 		modifier = {
 			factor = 0
