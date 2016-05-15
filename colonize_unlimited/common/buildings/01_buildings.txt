@@ -62,24 +62,24 @@
 building_gas_catcher_1 = {
 	base_buildtime = @b1time
 	planet_unique = yes
-	
+
 	cost = {
 		minerals = @b1cost
 	}
-	
+
 	produced_resources = {
 		sr_oxygen = 1
 		sr_nitrogen = 2
 	}
-	
+
 	upgrades = {
 		building_gas_catcher_2
 	}
-	
+
 	prerequisites = {
 		"tech_atmosphere_farming"
 	}
-	
+
 	potential = {
 		custom_tooltip = {
 			text = "requires_building_capital_1"
@@ -92,7 +92,7 @@ building_gas_catcher_1 = {
 			}
 		}
 	}
-	
+
 	allow = {
 		custom_tooltip = {
 			text = "wrong_planet_class_ctt"
@@ -114,20 +114,20 @@ building_gas_catcher_2 = {
 	base_buildtime = @b3time
 	planet_unique = yes
 	is_listed = no
-	
+
 	cost = {
 		minerals = @b3cost
 	}
-	
+
 	produced_resources = {
 		sr_oxygen = 2
 		sr_nitrogen = 4
 	}
-	
+
 	prerequisites = {
 		"tech_atmosphere_farming_2"
 	}
-	
+
 	allow = {
 		custom_tooltip = {
 			text = "requires_building_capital_2"
@@ -156,11 +156,11 @@ building_gas_catcher_2 = {
 
 building_hydrofusion_plant = {
 	base_buildtime = @b2time
-	
+
 	cost = {
 		minerals = @b2cost
 	}
-	
+
 	allow = {
 		custom_tooltip = {
 			text = "requires_building_capital_1"
@@ -173,12 +173,12 @@ building_hydrofusion_plant = {
 			}
 		}
 	}
-	
+
 	required_resources = {
 		sr_hydrogen = 1
 		sr_oxygen = 1
 	}
-	
+
 	produced_resources = {
 		sr_water = 2
 		energy = 2
@@ -187,16 +187,16 @@ building_hydrofusion_plant = {
 
 	prerequisites = {
 		"tech_hydrogen_burning"
-	}		
+	}
 }
 
 building_crystallizing_facility_1 = {
 	base_buildtime = @b3time
-	
+
 	cost = {
 		minerals = @b3cost
 	}
-	
+
 	allow = {
 		custom_tooltip = {
 			text = "requires_building_capital_2"
@@ -208,29 +208,29 @@ building_crystallizing_facility_1 = {
 			}
 		}
 	}
-	
+
 	required_resources = {
 		sr_carbon_dioxide = 3
 	}
-	
+
 	produced_resources = {
 		sr_carbon = 1
 		sr_oxygen = 2
 	}
-	
+
 	prerequisites = {
 		"tech_artificial_diamonds"
-	}	
+	}
 }
 
 building_burning_facility = {
 	base_buildtime = @b0time
 	planet_unique = yes
-	
+
 	cost = {
 		minerals = @b0cost
 	}
-	
+
 	allow = {
 		custom_tooltip = {
 			text = "requires_building_capital_1"
@@ -243,13 +243,54 @@ building_burning_facility = {
 			}
 		}
 	}
-	
+
 	produced_resources = {
 		sr_carbon_dioxide = 3
 		energy = 3
 	}
-	
+
 	prerequisites = {
 		"tech_atmosphere_mining"
+	}
+}
+
+
+building_water_extractor = {
+	base_buildtime = @b0time
+	planet_unique = yes
+
+	cost = {
+		minerals = @b0cost
+	}
+
+	allow = {
+		custom_tooltip = {
+			text = "requires_building_capital_and_not_water_void"
+			planet = {
+				OR = {
+					has_building = "building_capital_1"
+					has_building = "building_capital_2"
+					has_building = "building_capital_3"
+				}
+				NOT = {
+					is_planet_class = pc_desert
+					is_planet_class = pc_arid
+					is_planet_class = pc_gas_giant
+					is_planet_class = pc_molten
+					is_planet_class = pc_barren
+					is_planet_class = pc_barren_cold
+					is_planet_class = pc_toxic
+					is_planet_class = pc_nuked
+				}
+			}
+		}
+	}
+
+	produced_resources = {
+		sr_water = 3
+	}
+
+	prerequisites = {
+		"tech_water_extracting"
 	}
 }

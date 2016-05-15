@@ -14,7 +14,7 @@ d_hydrogen_deposit = {
 	orbital_weight = {
 		weight = 55
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -32,7 +32,7 @@ d_hydrogen_deposit = {
 					is_planet_class = pc_gas_giant
 					is_inside_nebula = yes
 				}
-			}			
+			}
 		}
 		modifier = {
 			factor = 0
@@ -54,11 +54,11 @@ d_water_deposit = {
 	resources = {
 		sr_water = 2
 	}
-	station = shipclass_mining_station 
+	station = shipclass_mining_station
 	orbital_weight = {
 		weight = 55
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -82,7 +82,7 @@ d_water_deposit = {
 					}
 					is_inside_nebula = yes
 				}
-			}			
+			}
 		}
 		modifier = {
 			factor = 0
@@ -108,7 +108,7 @@ d_carbon_dioxide_deposit = {
 	orbital_weight = {
 		weight = 55
 	}
-	
+
 	drop_weight = {
 		weight = 0
 		modifier = {
@@ -126,7 +126,7 @@ d_carbon_dioxide_deposit = {
 					is_planet_class = pc_toxic
 					is_inside_nebula = yes
 				}
-			}			
+			}
 		}
 		modifier = {
 			factor = 0
@@ -137,6 +137,28 @@ d_carbon_dioxide_deposit = {
 					has_deposit = "d_immense_society_deposit"
 					has_deposit = "d_immense_physics_deposit"
 					has_deposit = "d_immense_engineering_deposit"
+				}
+			}
+		}
+	}
+}
+
+d_carbon_deposit = {
+	resources = {
+		sr_carbon = 2
+	}
+	station = shipclass_mining_station
+	orbital_weight = {
+		weight = 55
+	}
+
+	drop_weight = {
+		weight = 0
+		modifier = {
+			weight = 10
+			planet = {
+				OR = {
+					is_planet_class = pc_asteroid
 				}
 			}
 		}
