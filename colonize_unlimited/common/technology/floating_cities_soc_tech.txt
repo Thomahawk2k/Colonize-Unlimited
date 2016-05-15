@@ -1,9 +1,9 @@
-@tier2cost3 = 1500
+@tier3cost3 = 3360
 
 tech_floating_cities = {
-	cost = @tier2cost3
+	cost = @tier3cost3
 	area = society
-	tier = 1
+	tier = 3
 	category = { new_worlds }
 	prerequisites = { "tech_colonization_1" }
 	weight = 200
