@@ -4,7 +4,7 @@
 # time, amount of days it takes to clear this tile blocker.
 # picture = tb_active_volcano #Use art from tb_active_volcano
 
-tb_mountain_range = {	
+tb_mountain_range = {
 	time = 100
 	cost = {
 		energy = 100
@@ -12,6 +12,12 @@ tb_mountain_range = {
 	}
 
 	spawn_chance = {
+		modifier = {
+			factor = 0
+			planet = {
+				is_planet_class = pc_gas_giant
+			}
+		}
 		modifier = {
 			add = 9
 			planet = {
@@ -34,7 +40,7 @@ tb_mountain_range = {
 				}
 		}
 	}
-	
+
 	prerequisites = { "tech_tb_mountain_range" }
 }
 
@@ -46,6 +52,12 @@ tb_active_volcano = {
 	}
 
 	spawn_chance = {
+		modifier = {
+			factor = 0
+			planet = {
+				is_planet_class = pc_gas_giant
+			}
+		}
 		modifier = {
 			add = 9
 			planet = {
@@ -95,11 +107,11 @@ tb_active_volcano = {
 				}
 		}
 	}
-	
+
 	prerequisites = { "tech_tb_volcano" }
 }
 
-tb_dangerous_wildlife = {	
+tb_dangerous_wildlife = {
 	time = 100
 	cost = {
 		energy = 100
@@ -107,6 +119,12 @@ tb_dangerous_wildlife = {
 	}
 
 	spawn_chance = {
+		modifier = {
+			factor = 0
+			planet = {
+				is_planet_class = pc_gas_giant
+			}
+		}
 		modifier = {
 			add = 9
 			planet = {
@@ -146,11 +164,11 @@ tb_dangerous_wildlife = {
 				}
 		}
 	}
-	
+
 	prerequisites = { "tech_tb_dangerous_wildlife" }
 }
 
-tb_dense_jungle = {	
+tb_dense_jungle = {
 	time = 100
 	cost = {
 		energy = 100
@@ -158,6 +176,12 @@ tb_dense_jungle = {
 	}
 
 	spawn_chance = {
+		modifier = {
+			factor = 0
+			planet = {
+				is_planet_class = pc_gas_giant
+			}
+		}
 		modifier = {
 			add = 36
 			planet = {
@@ -189,11 +213,11 @@ tb_dense_jungle = {
 				}
 		}
 	}
-	
+
 	prerequisites = { "tech_tb_dense_jungle" }
 }
 
-tb_quicksand_basin = {	
+tb_quicksand_basin = {
 	time = 100
 	cost = {
 		energy = 100
@@ -226,7 +250,7 @@ tb_quicksand_basin = {
 				}
 		}
 	}
-	
+
 	prerequisites = { "tech_tb_quicksand_basin" }
 }
 
@@ -257,11 +281,11 @@ tb_noxious_swamp = {
 				}
 		}
 	}
-	
+
 	prerequisites = { "tech_tb_noxious_swamp" }
 }
 
-tb_massive_glacier = {	
+tb_massive_glacier = {
 	time = 100
 	cost = {
 		energy = 100
@@ -294,11 +318,11 @@ tb_massive_glacier = {
 				}
 		}
 	}
-	
+
 	prerequisites = { "tech_tb_massive_glacier" }
 }
 
-tb_toxic_kelp = {	
+tb_toxic_kelp = {
 	time = 100
 	cost = {
 		energy = 100
@@ -325,7 +349,7 @@ tb_toxic_kelp = {
 				}
 		}
 	}
-	
+
 	prerequisites = { "tech_tb_toxic_kelp" }
 }
 
@@ -356,7 +380,7 @@ tb_deep_sinkhole = {
 				}
 		}
 	}
-	
+
 	prerequisites = { "tech_tb_deep_sinkhole" }
 }
 
@@ -377,7 +401,7 @@ tb_radioactive_wasteland = {
 			}
 		}
 	}
-	
+
 	adjacency_bonus = {
 		resource_society_research_add = 2
 		resource_physics_research_add = 2
@@ -473,7 +497,7 @@ tb_tribal_settlement = {
 }
 
 tb_wandering_forests = {
-	picture = tb_dense_jungle 
+	picture = tb_dense_jungle
 	cost = { # Can't be removed
 	}
 
@@ -485,7 +509,7 @@ tb_wandering_forests = {
 }
 
 tb_wandering_forest_reserve = {
-	picture = tb_dense_jungle 
+	picture = tb_dense_jungle
 	cost = { # Can't be removed
 	}
 
@@ -543,7 +567,7 @@ tb_titanic_life_blocker = {	#Added via event
 			add = 0
 		}
 	}
-	
+
 }
 
 # Failing Infrastructure are generated on homeworlds at game-start
@@ -589,7 +613,7 @@ tb_bombarded_land = {
 		energy = 75
 		minerals = 75
 	}
-	
+
 	spawn_chance = {
 		modifier = {
 			add = 0
