@@ -6,5 +6,8 @@
   tb_poisonous_gas:0 "Corrosive Gas"
   tb_poisonous_gas_desc:0 "This gas is highly corrisive! Our cities won't last long here."
 
+  pc_gas_giant_tile:0 "Gas Giant Atmosphere"
+  pc_gas_giant_tile_desc:0 "Mixture of thick gases. Life is almost always inexistant."
+
   TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_TITLE:0 "Floating Cities"
   TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_DESC:0 "Allows us to colonize Gas Giants by building floating cities."
