@@ -189,7 +189,7 @@ terraform_link = {
 
 	energy = 1500
 	resources = {
-		sr_dioxide = 3
+		sr_carbon_dioxide = 3
 	}
 
 	condition = {
@@ -983,8 +983,7 @@ terraform_link = {
 	}
 }
 
-# Molten worlds, the colder you need them to become, the more solarprotection you need to build = more minerals
-
+# Molten worlds, the colder you need them to become, the more solar protection you need to build
 # Molten to Continental
 terraform_link = {
 	from = "pc_molten"
@@ -992,7 +991,6 @@ terraform_link = {
 
 	#cost
 	energy = 2500
-	minerals = 250
 	resources = {
 		sr_carbon = 4
 		sr_oxygen = 5
