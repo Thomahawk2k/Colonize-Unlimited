@@ -190,7 +190,7 @@ building_hydrofusion_plant = {
 	}
 }
 
-building_crystallizing_facility_1 = {
+building_crystallizing_facility = {
 	base_buildtime = @b3time
 
 	cost = {
