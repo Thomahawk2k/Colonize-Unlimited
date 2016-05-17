@@ -1,0 +1,13 @@
+﻿l_braz_por:
+  tb_cloud_storm:0 "Tempestade"
+  tb_cloud_storm_desc:0 "Esta zona tem uma tempestade (mais) perigosa."
+  tb_floater_herd:0 "Manada de Flutuadores"
+  tb_floater_herd_desc:0 "Estes animais são dóceis mas tendem a comer o nosso equipamento flutuante."
+  tb_poisonous_gas:0 "Gás Corrosivo"
+  tb_poisonous_gas_desc:0 "Este gás é altamente corrosivo! As nossas cidades dificilmente durariam muito aqui."
+
+  pc_gas_giant_tile:0 "Atmosfera Gasosa"
+  pc_gas_giant_tile_desc:0 "Uma mistura espessa de gases. A vida é inexistente ou rara."
+
+  TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_TITLE:0 "Cidades Flutuantes"
+  TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_DESC:0 "Permite-nos colonizar gigantes gasosos ao contruir cidades na sua atmosfera."
