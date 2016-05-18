@@ -105,10 +105,10 @@ d_rich_mineral_deposit = {
 			weight = 6
 			planet = {
 				OR = {
+					is_planet_class = pc_molten
 					is_planet_class = pc_toxic
 					is_planet_class = pc_nuked
 					is_planet_class = pc_frozen
-					is_planet_class = pc_molten
 				}
 			}
 		}
@@ -169,11 +169,11 @@ d_vast_mineral_deposit = {
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
 					is_planet_class = pc_frozen
-					is_planet_class = pc_toxic
 					is_planet_class = pc_barren
 					is_planet_class = pc_barren_cold
 					is_planet_class = pc_frozen
 					is_planet_class = pc_molten
+					is_planet_class = pc_toxic
 				}
 			}
 		}

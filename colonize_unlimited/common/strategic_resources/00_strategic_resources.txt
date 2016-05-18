@@ -55,6 +55,7 @@ influence = {
 
 sr_terraform_gases = {
 	AI_category = strategic_resource
+	prerequisites = { "tech_terrestrial_sculpting" }
 	tradable = yes
 	is_rare = yes
 	
@@ -63,6 +64,7 @@ sr_terraform_gases = {
 
 sr_terraform_liquids = {
 	AI_category = strategic_resource
+	prerequisites = { "tech_terrestrial_sculpting" }
 	tradable = yes
 	is_rare = yes
 	
