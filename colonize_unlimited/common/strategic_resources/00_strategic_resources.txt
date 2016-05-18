@@ -55,19 +55,21 @@ influence = {
 
 sr_terraform_gases = {
 	AI_category = strategic_resource
-	prerequisites = { "tech_terrestrial_sculpting" }
+	# Prerequisite needs to be removed otherwise it shows up on the unlocks of the tech
+	# prerequisites = { "tech_terrestrial_sculpting" }
 	tradable = yes
 	is_rare = yes
-	
+
 	num_ai_wanted = 100
 }
 
 sr_terraform_liquids = {
 	AI_category = strategic_resource
-	prerequisites = { "tech_terrestrial_sculpting" }
+	# Prerequisite needs to be removed otherwise it shows up on the unlocks of the tech
+	# prerequisites = { "tech_terrestrial_sculpting" }
 	tradable = yes
 	is_rare = yes
-	
+
 	num_ai_wanted = 100
 }
 
@@ -177,7 +179,7 @@ sr_betharian = {
 	prerequisites = { "tech_mine_betharian" }
 	tradable = yes
 	is_rare = yes
-	
+
 	num_ai_wanted = 100
 }
 
