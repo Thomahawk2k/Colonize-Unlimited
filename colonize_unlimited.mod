@@ -6,6 +6,6 @@ tags={
 	"Overhaul"
 	"Technologies"
 }
-picture="colunlim.png"
+picture="colunlim.jpg"
 remote_file_id="682582076"
 supported_version="1.0.*"

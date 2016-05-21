@@ -1,0 +1,13 @@
+﻿l_braz_por:
+  sr_nitrogen:0 "Azoto"
+  sr_nitrogen_desc:0 "Encontrado universalmente em mundos habitáveis, o azoto é um dos componentes primários para a vida orgânica e necessário para terraformar mundos que não possuem suficiente."
+  sr_oxygen:0 "Oxigénio"
+  sr_oxygen_desc:0 "Encontrado universalmente em mundos habitáveis, o oxigénio é crucial na fotossíntese e consequentemente no ciclo do carbono. Planetas que não abrigam o suficiente para sustentarem vida, precisam de oxigénio para serem terraformados."
+  sr_carbon_dioxide:0 "Dióxido de Carbono"
+  sr_carbon_dioxide_desc:0 "Provavelmente o gas efeito-estufa mais conhecido, o dióxido de carbono é um elemento crucial no aquecimento de um planeta para além de ter um papel importante na fotossíntese. Planetas sem uma atmosfera precisam de alguma quantidade dele para serem terraformados."
+  sr_hydrogen:0 "Hidrogénio"
+  sr_hydrogen_desc:0 "Encontrado nas estrelas (ainda que seja inacessível) e em planetas gasosos. O hidrogénio não é essencial para terraformar um planeta mas com ele é possível criar água quando junto com oxigénio. Este processo gera alguma energia."
+  sr_water:0 "Água"
+  sr_water_desc:0 "Um elemento crucial para a vida, a água (ou monóxido de di-hidrogénio) está disponível universalmente em quaquer planeta habitável, ainda que seja escasso em alguns climas. A água serve para humedecer os planetas secos e tornar mundos inóspitos em mundos mais acolhedores."
+  sr_carbon:0 "Diamante"
+  sr_carbon_desc:0 "Sendo carbono cristalizado, o diamante é um dos materiais mais duros conhecidos. O diamante também reflecte, o que permite arrefecer um planeta quando espalhado pela atmosfera com técnicas de aerosol."

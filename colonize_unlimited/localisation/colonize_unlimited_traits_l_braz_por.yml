@@ -1,0 +1,13 @@
+﻿l_braz_por:
+  trait_pc_gas_giant_preference:0 "Preferência Gasosa"
+  trait_pc_gas_giant_preference_desc:1 "§LAtravés de manipulação genética ou da evolução, esta espécie adaptou-se a flutuar pela atmosfera espessa de Gigantes Gasosos§!"
+  trait_pc_molten_preference:0 "Preferência Vulcânica"
+  trait_pc_molten_preference_desc:1 "§LEsta espécie evoluiu ou foi modificada para suportar temperaturas elevadíssimas, conseguindo assim viver na superfícies quente e nadar pelos oceanos de lava§!"
+  trait_pc_barren_preference:0 "Preferência Infértil"
+  trait_pc_barren_preference_desc:1 "§LSem atmosfera nem vida, esta espécie adaptou-se para viver com pouco. Aliementa-se atravez da fotossíntese, minerais e das escassas bactérias na superfície§!"
+  trait_pc_barren_cold_preference:0 "Preferência Infértil"
+  trait_pc_barren_cold_preference_desc:1 "§LSem atmosfera nem vida, esta espécie adaptou-se para viver em ambientes frios e inférteis. Aliementa-se de minerais e das escassas bactérias na superfície§!"
+  trait_pc_toxic_preference:0 "Preferência Tóxica"
+  trait_pc_toxic_preference_desc:1 "§LEsta espécie mutou de moto a respirar os gases quentes e tóxicos da atmosfera. O oxigénio tornou-se venenoso§!"
+  trait_pc_frozen_preference:0 "Preferência Gelada"
+  trait_pc_frozen_preference_desc:1 "§LEsta espécie sofreu mutações para suportar temperaturas baixíssimas. Dizem que conseguem suportar quase 0 absoluto§!"

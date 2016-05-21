@@ -1,0 +1,13 @@
+﻿l_english:
+  sr_nitrogen:0 "Nitrogen"
+  sr_nitrogen_desc:0 "Found universally on habitable worlds, nitrogen is one of the primary components of organic life and required to terraform planets that do not house enough of it to sustain life."
+  sr_oxygen:0 "Oxygen"
+  sr_oxygen_desc:0 "Found universally on habitable worlds, oxygen is a crucial element in photosynthesis and consequently of the carbon cycle. Planets that do not house enough of it to sustain life will need oxygen to be terraformed."
+  sr_carbon_dioxide:0 "Carbon Dioxide"
+  sr_carbon_dioxide_desc:0 "Likely being the most well known greenhouse gas, carbon dioxide is a crucial element in warming up planets, additionally, being a crucial element in photosynthesis, planets without an atmosphere will need at least some amount of it in order to allow terraformation."
+  sr_hydrogen:0 "Hydrogen"
+  sr_hydrogen_desc:0 "Found in stars (although inaccessible there) and in gas giants, hydrogen is not a crucial element in terraforming, we can however turn it into water together with the oxygen in the atmosphere, giving us energy as a by-effect."
+  sr_water:0 "Water"
+  sr_water_desc:0 "Being a crucial element in organic life, water, or dihydro monoxide, is universally available on any habitable planet, even though it may be scarce in some climates. Water is crucial to make dry planets wetter and inhospitable planets hospitable."
+  sr_carbon:0 "Diamond"
+  sr_carbon_desc:0 "Being crystallized carbon in it's purest form, diamond is one of the hardest naturally occuring resource known. Additionally, it reflects. By using special aerosol techniques we can limit the sunlight to reach the planet's surface, allowing us to effectively cool down planets in a reverse greenhouse."
