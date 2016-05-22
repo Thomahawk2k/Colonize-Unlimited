@@ -3,5 +3,5 @@ path="mod/000_beautiful_battles_and_a_better_system_scale_merge"
 tags={
 	"Fixes"
 }
-picture="colunlim.jpg"
+picture="bb_abss_cu.jpg"
 supported_version="1.0.*"

@@ -3,5 +3,5 @@ path="mod/001_a_better_system_scale_merge"
 tags={
 	"Fixes"
 }
-picture="colunlim.jpg"
+picture="abss_cu.jpg"
 supported_version="1.0.*"
