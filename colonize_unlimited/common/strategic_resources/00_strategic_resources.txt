@@ -7,6 +7,7 @@ time = {
 
 energy = {
 	accumulative = yes
+	collect_if_wrong_building = no
 	accumulated_by_sectors = yes
 	tradable = yes
 	AI_category = energy
@@ -15,6 +16,7 @@ energy = {
 
 minerals = {
 	accumulative = yes
+	collect_if_wrong_building = no
 	accumulated_by_sectors = yes
 	tradable = yes
 	AI_category = minerals
@@ -24,21 +26,25 @@ minerals = {
 food = {
 	is_planet_local = yes
 	accumulative = yes
+	collect_if_wrong_building = no
 	AI_category = food
 }
 
 physics_research = {
 	accumulative = yes
+	collect_if_wrong_building = no
 	AI_category = physics
 }
 
 society_research = {
 	accumulative = yes
+	collect_if_wrong_building = no
 	AI_category = society
 }
 
 engineering_research = {
 	accumulative = yes
+	collect_if_wrong_building = no
 	AI_category = engineering
 }
 

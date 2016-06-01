@@ -2129,6 +2129,7 @@ tech_terrestrial_sculpting = {
 		modifier = {
 			factor = 0
 			NOT = { has_country_flag = homesystem_surveyed }
+			is_ai = no
 		}
 	}
 
@@ -3316,7 +3317,7 @@ tech_interstellar_fleet_traditions = {
 	prerequisites = { "tech_doctrine_fleet_size_2" }
 	weight = @tier1weight4
 
-	#unlocks fleet academy & navigator's guild modules
+	#unlocks fleet academy
 
 	weight_modifier = {
 		modifier = {

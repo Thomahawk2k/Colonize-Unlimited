@@ -9,7 +9,7 @@ sol_system_initializer = {
 	
 	class = "sc_g"
 	asteroids_distance = 120
-	flags = { sol_system }
+	flags = { sol_system sol }
 	
 	usage = custom_empire
 	
@@ -27,7 +27,7 @@ sol_system_initializer = {
 		class = "pc_molten"
 		orbit_distance = 40
 		orbit_angle = 15
-		size = 14
+		size = 10
 		has_ring = no
 	}
 	
@@ -552,7 +552,7 @@ deneb_system = {
 		class = "pc_molten"
 		orbit_distance = 60
 		orbit_angle = 45
-		size = 14
+		size = 10
 		has_ring = no
 	}
 	
