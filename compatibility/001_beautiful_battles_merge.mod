@@ -4,4 +4,4 @@ tags={
 	"Fixes"
 }
 picture="bb_cu.jpg"
-supported_version="1.0.*"
+supported_version="1.1.*"
