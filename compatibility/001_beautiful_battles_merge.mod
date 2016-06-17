@@ -5,3 +5,4 @@ tags={
 }
 picture="bb_cu.jpg"
 supported_version="1.1.*"
+remote_file_id="689609351"

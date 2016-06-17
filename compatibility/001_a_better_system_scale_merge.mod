@@ -5,3 +5,4 @@ tags={
 }
 picture="abss_cu.jpg"
 supported_version="1.0.*"
+remote_file_id="689609232"
