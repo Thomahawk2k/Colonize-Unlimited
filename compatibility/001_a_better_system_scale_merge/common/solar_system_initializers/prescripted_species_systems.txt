@@ -9,7 +9,7 @@ sol_system_initializer = {
 
 	class = "sc_g"
 	asteroids_distance = 120
-	flags = { sol_system }
+	flags = { sol_system sol }
 
 	usage = custom_empire
 
