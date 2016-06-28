@@ -4,5 +4,5 @@ tags={
 	"Fixes"
 }
 picture="bb_cu.jpg"
-supported_version="1.1.*"
+supported_version="1.2.*"
 remote_file_id="689609351"

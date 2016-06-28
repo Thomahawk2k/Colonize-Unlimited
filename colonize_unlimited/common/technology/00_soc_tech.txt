@@ -768,7 +768,7 @@ tech_desert_colonization = {
 		colonization
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		colonization = 0.5
 	}
 
 	ai_weight = {
@@ -842,7 +842,7 @@ tech_tropical_colonization = {
 		colonization
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		colonization = 0.5
 	}
 
 	ai_weight = {
@@ -916,7 +916,7 @@ tech_continental_colonization = {
 		colonization
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		colonization = 0.5
 	}
 
 	ai_weight = {
@@ -990,7 +990,7 @@ tech_ocean_colonization = {
 		colonization
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		colonization = 0.5
 	}
 
 	ai_weight = {
@@ -1064,7 +1064,7 @@ tech_arctic_colonization = {
 		colonization
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		colonization = 0.5
 	}
 
 	ai_weight = {
@@ -1138,7 +1138,7 @@ tech_tundra_colonization = {
 		colonization
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		colonization = 0.5
 	}
 
 	ai_weight = {
@@ -1211,7 +1211,7 @@ tech_arid_colonization = {
 		colonization
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		colonization = 0.5
 	}
 
 	ai_weight = {
@@ -1483,7 +1483,7 @@ tech_tb_mountain_range = {
 		tile_blockers
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		tile_blockers = 0.5
 	}
 
 	weight_modifier = {
@@ -1553,7 +1553,7 @@ tech_tb_volcano = {
 		tile_blockers
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		tile_blockers = 0.5
 	}
 
 	weight_modifier = {
@@ -1623,7 +1623,7 @@ tech_tb_dangerous_wildlife = {
 		tile_blockers
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		tile_blockers = 0.5
 	}
 
 	weight_modifier = {
@@ -1693,7 +1693,7 @@ tech_tb_dense_jungle = {
 		tile_blockers
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		tile_blockers = 0.5
 	}
 
 	weight_modifier = {
@@ -1763,7 +1763,7 @@ tech_tb_quicksand_basin = {
 		tile_blockers
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		tile_blockers = 0.5
 	}
 
 	weight_modifier = {
@@ -1833,7 +1833,7 @@ tech_tb_noxious_swamp = {
 		tile_blockers
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		tile_blockers = 0.5
 	}
 
 	weight_modifier = {
@@ -1903,7 +1903,7 @@ tech_tb_massive_glacier = {
 		tile_blockers
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		tile_blockers = 0.5
 	}
 
 	weight_modifier = {
@@ -1973,7 +1973,7 @@ tech_tb_toxic_kelp = {
 		tile_blockers
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		tile_blockers = 0.5
 	}
 
 	weight_modifier = {
@@ -2043,7 +2043,7 @@ tech_tb_deep_sinkhole = {
 		tile_blockers
 	}
 	mod_weight_if_group_picked = {
-		repeatable = 0.01
+		tile_blockers = 0.5
 	}
 
 	weight_modifier = {
@@ -2833,10 +2833,6 @@ tech_selected_lineages = {
 	weight = @tier2weight2
 
 	# Modifiers from this tech is added through a policy-option
-	modifier = {
-		# leader_skill_levels = 1
-		# leader_age = 30
-	}
 
 	weight_modifier = {
 		modifier = {
@@ -4115,6 +4111,107 @@ tech_purity_campaigns = {
 	}
 }
 
+#Symbols of Unity
+tech_symbol_unity = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { statecraft }
+	prerequisites = { "tech_planetary_government" }
+	weight = @tier1weight2
+	is_rare = yes
+	
+	# unlocks Symbol of Unity planetary wonder
+	
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_spiritualist
+					has_ethic = ethic_fanatic_spiritualist
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 4
+			has_ethic = ethic_fanatic_spiritualist
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
+#Visitor Center
+tech_visitor_center = {
+	cost = @tier1cost2
+	area = society
+	tier = 1
+	category = { statecraft }	
+	prerequisites = { "tech_xeno_relations" }
+	weight = @tier1weight2
+	is_rare = yes
+	
+	# unlocks Visitor Center planetary wonder
+	# edict to invite friends to your planets
+	
+	weight_modifier = {
+		modifier = {
+			factor = 3
+			num_communications > 2
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					has_ethic = ethic_xenophile
+					has_ethic = ethic_fanatic_xenophile
+				}
+			}
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+		modifier = {
+			factor = 0
+			num_communications < 1
+		}
+	}
+	
+	ai_weight = {
+		modifier = {
+			factor = 10
+			has_ethic = ethic_fanatic_xenophile
+		}
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = society
+				has_trait = "leader_trait_expertise_statecraft"
+			}
+		}
+	}
+}
+
 tech_xeno_diplomacy = {
 	cost = @tier2cost1
 	area = society
@@ -4173,7 +4270,7 @@ tech_xeno_diplomacy = {
 		factor = 3
 		modifier = {
 			factor = 10
-			has_ai_personality_type = federation_builder
+			has_ai_personality = federation_builders
 		}
 		modifier = {
 			factor = 2
@@ -4240,6 +4337,7 @@ tech_xeno_integration = {
 			factor = 0
 			NOT = {
 				any_owned_pop = {
+					is_robot = yes
 					NOT = {
 						is_same_species = ROOT
 					}
@@ -4262,12 +4360,12 @@ tech_galactic_ambitions = {
 		country_border_mult = 0.2
 	}
 
-	prereqfor_desc = {
-		intel = {
-			title = "TECH_UNLOCK_SURVEY_INTEL_TITLE"
-			desc = "TECH_UNLOCK_SURVEY_INTEL_DESC"
-		}
-	}
+	#prereqfor_desc = {
+	#	intel = {
+	#		title = "TECH_UNLOCK_SURVEY_INTEL_TITLE"
+	#		desc = "TECH_UNLOCK_SURVEY_INTEL_DESC"
+	#	}	
+	#}
 
 	prereqfor_desc = {
 		component = {
@@ -5245,4 +5343,3 @@ tech_will_to_power = {
 # ##################
 # Other
 # ##################
-
