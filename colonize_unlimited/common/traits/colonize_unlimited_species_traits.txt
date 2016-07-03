@@ -1,5 +1,4 @@
 @primary = 0.80
-@almost_primary = 0.70
 @secondary = 0.60
 @tertiary = 0.20
 
@@ -20,8 +19,9 @@ trait_pc_molten_preference = {
 		pc_molten_habitability = @primary
 		pc_desert_habitability = @secondary
 		pc_arid_habitability = @secondary
-		pc_toxic_habitability = @tertiary
-		pc_continental_habitability = @tertiary
+		pc_toxic_habitability = @secondary
+		pc_tropical_habitability = @tertiary
+		pc_barren_habitability = @tertiary
 	}
 }
 
@@ -30,10 +30,11 @@ trait_pc_barren_preference = {
 	modification = no
 	modifier = {
 		pc_barren_habitability = @primary
-		pc_barren_cold_habitability = @almost_primary
-    pc_nuked_habitability = @secondary
-		pc_desert_habitability = @tertiary
-		pc_arid_habitability = @tertiary
+		pc_barren_cold_habitability = @secondary
+		pc_arid_habitability = @secondary
+		pc_molten_preference = @tertiary
+    pc_tundra_habitability = @tertiary
+    pc_nuked_habitability = @tertiary
 	}
 }
 
@@ -42,11 +43,11 @@ trait_pc_barren_cold_preference = {
 	modification = no
 	modifier = {
 		pc_barren_cold_habitability = @primary
-		pc_barren_habitability = @almost_primary
-		pc_arctic_habitability = @secondary
-    pc_nuked_habitability = @secondary
-		pc_desert_habitability = @tertiary
+		pc_barren_habitability = @secondary
+		pc_tundra_habitability = @secondary
+		pc_frozen_habitability = @tertiary
 		pc_arid_habitability = @tertiary
+    pc_nuked_habitability = @tertiary
 	}
 }
 
@@ -56,6 +57,9 @@ trait_pc_toxic_preference = {
 	modifier = {
     pc_toxic_habitability = @primary
     pc_nuked_habitability = @secondary
+    pc_molten_habitability = @secondary
+    pc_desert_habitability = @secondary
+    pc_arid_habitability = @secondary
     pc_gas_giant_habitability = @tertiary
 	}
 }
@@ -65,8 +69,9 @@ trait_pc_frozen_preference = {
 	modification = no
 	modifier = {
     pc_frozen_habitability = @primary
-    pc_barren_cold_habitability = @secondary
 		pc_arctic_habitability = @secondary
-    pc_tundra_habitability = @tertiary
+    pc_tundra_habitability = @secondary
+    pc_barren_cold_habitability = @tertiary
+    pc_ocean_habitability = @tertiary
 	}
 }

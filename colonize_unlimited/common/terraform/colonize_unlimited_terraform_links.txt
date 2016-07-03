@@ -3,19 +3,35 @@
 # Note that thanks to my incapability, all comments this-to-that are the wrong way around
 #
 
-# Barren worlds
-# Barren to Continental
+# Arid Additions #########
+# Arid to Barren
 terraform_link = {
-	from = "pc_barren"
-	to = "pc_continental"
+	from = "pc_arid"
+	to = "pc_barren"
 
 	#cost
 	energy = 2500
 	resources = {
-		sr_oxygen = 5
 		sr_nitrogen = 5
-		sr_water = 4
-		sr_carbon_dioxide = 1
+		sr_carbon_dioxide = 3
+	}
+
+	condition = {
+		has_technology = "tech_stimulated_solar_winds"
+	}
+}
+
+# Arid to Molten
+terraform_link = {
+	from = "pc_arid"
+	to = "pc_molten"
+
+	#cost
+	energy = 2500
+	resources = {
+		sr_nitrogen = 5
+		sr_carbon_dioxide = 8
+		sr_hydrogen = 4
 	}
 
 	condition = {
@@ -23,17 +39,18 @@ terraform_link = {
 	}
 }
 
-# Barren to Ocean
+# Arid to Toxic
 terraform_link = {
-	from = "pc_barren"
-	to = "pc_ocean"
+	from = "pc_arid"
+	to = "pc_toxic"
 
 	#cost
 	energy = 2500
 	resources = {
-		sr_water = 5
-		sr_oxygen = 5
 		sr_nitrogen = 5
+		sr_carbon_dioxide = 10
+		sr_hydrogen = 4
+		sr_water = 1
 	}
 
 	condition = {
@@ -41,37 +58,76 @@ terraform_link = {
 	}
 }
 
-# Barren to Arctic
+# Artic additions #########
+# Artic to Frozen
 terraform_link = {
-	from = "pc_barren"
-	to = "pc_arctic"
+	from = "pc_arctic"
+	to = "pc_frozen"
 
 	#cost
 	energy = 2500
 	resources = {
+		sr_nitrogen = 5
+		sr_water = 8
 		sr_carbon = 2
-		sr_nitrogen = 5
-		sr_oxygen = 5
-		sr_water = 5
 	}
 
 	condition = {
-		has_technology = "tech_artificial_atmosphere"
+		has_technology = "tech_high_alt_solarprotection"
 	}
 }
 
-# Barren to Tundra
+
+# Tundra additions #########
+# Tundra to Frozen
 terraform_link = {
-	from = "pc_barren"
-	to = "pc_tundra"
+	from = "pc_arctic"
+	to = "pc_frozen"
 
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbon = 1
 		sr_nitrogen = 5
-		sr_oxygen = 5
-		sr_water = 3
+		sr_water = 10
+		sr_carbon = 1
+	}
+
+	condition = {
+		has_technology = "tech_high_alt_solarprotection"
+	}
+}
+
+# Tundra to Barren Cold
+terraform_link = {
+	from = "pc_arctic"
+	to = "pc_frozen"
+
+	#cost
+	energy = 2500
+	resources = {
+		sr_nitrogen = 5
+		sr_carbon = 3
+	}
+
+	condition = {
+		has_technology = "tech_stimulated_solar_winds"
+	}
+}
+
+
+# Desert additions #########
+# Desert to Toxic
+terraform_link = {
+	from = "pc_desert"
+	to = "pc_toxic"
+
+	#cost
+	energy = 2500
+	resources = {
+		sr_carbon_dioxide = 6
+		sr_oxygen = 1
+		sr_nitrogen = 5
+		sr_water = 1
 	}
 
 	condition = {
@@ -79,6 +135,26 @@ terraform_link = {
 	}
 }
 
+# Desert to Molten
+terraform_link = {
+	from = "pc_desert"
+	to = "pc_molten"
+
+	#cost
+	energy = 2500
+	resources = {
+		sr_carbon_dioxide = 6
+		sr_nitrogen = 5
+		sr_hydrogen = 4
+	}
+
+	condition = {
+		has_technology = "tech_artificial_atmosphere"
+	}
+}
+
+
+# Barren worlds #########
 # Barren to Arid
 terraform_link = {
 	from = "pc_barren"
@@ -98,113 +174,38 @@ terraform_link = {
 	}
 }
 
-# Barren to Desert
+# Barren to Barren Cold
 terraform_link = {
 	from = "pc_barren"
-	to = "pc_desert"
+	to = "pc_barren_cold"
 
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbon_dioxide = 4
+		sr_carbon = 6
 		sr_nitrogen = 5
-		sr_oxygen = 5
 		sr_water = 1
 	}
 
 	condition = {
-		has_technology = "tech_artificial_atmosphere"
+		has_technology = "tech_high_alt_solarprotection"
 	}
 }
 
-# Barren to Tropical
+
+# Toxic worlds #########
+# Toxic to Molten
 terraform_link = {
-	from = "pc_barren"
-	to = "pc_tropical"
+	from = "pc_toxic"
+	to = "pc_molten"
 
 	#cost
 	energy = 2500
 	resources = {
-		sr_water = 4
+		sr_carbon = 4
 		sr_carbon_dioxide = 3
-		sr_nitrogen = 5
-		sr_oxygen = 5
-	}
-
-	condition = {
-		has_technology = "tech_artificial_atmosphere"
-	}
-}
-
-# Toxic worlds
-
-# Toxic to Continental
-terraform_link = {
-	from = "pc_toxic"
-	to = "pc_continental"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_water = 4
 		sr_oxygen = 5
 		sr_nitrogen = 5
-	}
-
-	condition = {
-		has_technology = "tech_stimulated_solar_winds"
-	}
-}
-
-# Toxic to Ocean
-terraform_link = {
-	from = "pc_toxic"
-	to = "pc_ocean"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_nitrogen = 5
-		sr_oxygen = 5
-		sr_water = 5
-	}
-
-	condition = {
-		has_technology = "tech_stimulated_solar_winds"
-	}
-}
-
-# Toxic to Arctic
-terraform_link = {
-	from = "pc_toxic"
-	to = "pc_arctic"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_carbon = 5
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 4
-	}
-
-	condition = {
-		has_technology = "tech_stimulated_solar_winds"
-	}
-}
-
-# Toxic to Tundra
-terraform_link = {
-	from = "pc_toxic"
-	to = "pc_tundra"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_carbon = 2
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 3
 	}
 
 	condition = {
@@ -249,84 +250,7 @@ terraform_link = {
 	}
 }
 
-# Toxic to Tropical
-terraform_link = {
-	from = "pc_toxic"
-	to = "pc_tropical"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_carbon_dioxide = 2
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 3
-	}
-
-	condition = {
-		has_technology = "tech_stimulated_solar_winds"
-	}
-}
-
-# Cold barren worlds (yeah, that's the moon)
-
-# Cold Barren to Continental
-terraform_link = {
-	from = "pc_barren_cold"
-	to = "pc_continental"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_carbon_dioxide = 2
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 3
-	}
-
-	condition = {
-		has_technology = "tech_artificial_atmosphere"
-	}
-}
-
-# Cold Barren to Ocean
-terraform_link = {
-	from = "pc_barren_cold"
-	to = "pc_ocean"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_carbon_dioxide = 2
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 3
-	}
-
-	condition = {
-		has_technology = "tech_artificial_atmosphere"
-	}
-}
-
-# Cold Barren to Arctic
-terraform_link = {
-	from = "pc_barren_cold"
-	to = "pc_arctic"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_carbon = 2
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 4
-	}
-
-	condition = {
-		has_technology = "tech_artificial_atmosphere"
-	}
-}
-
+# Cold barren worlds #########
 # Cold Barren to Tundra
 terraform_link = {
 	from = "pc_barren_cold"
@@ -346,76 +270,17 @@ terraform_link = {
 	}
 }
 
-# Cold Barren to Arid
+# Cold Barren to Barren
 terraform_link = {
 	from = "pc_barren_cold"
-	to = "pc_arid"
+	to = "pc_barren"
 
 	#cost
 	energy = 2500
 	resources = {
-		sr_oxygen = 5
+		sr_carbon = 6
 		sr_nitrogen = 5
 		sr_water = 1
-	}
-
-	condition = {
-		has_technology = "tech_artificial_atmosphere"
-	}
-}
-
-# Cold Barren to Desert
-terraform_link = {
-	from = "pc_barren_cold"
-	to = "pc_desert"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_carbon_dioxide = 4
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 1
-	}
-
-	condition = {
-		has_technology = "tech_artificial_atmosphere"
-	}
-}
-
-# Cold Barren to Tropical
-terraform_link = {
-	from = "pc_barren_cold"
-	to = "pc_tropical"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_carbon_dioxide = 2
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 3
-	}
-
-	condition = {
-		has_technology = "tech_artificial_atmosphere"
-	}
-}
-
-# Frozen worlds
-
-# Frozen to Continental (Melt it ;))
-terraform_link = {
-	from = "pc_frozen"
-	to = "pc_continental"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_carbon_dioxide = 4
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 3
 	}
 
 	condition = {
@@ -423,25 +288,7 @@ terraform_link = {
 	}
 }
 
-# Frozen to Ocean
-terraform_link = {
-	from = "pc_frozen"
-	to = "pc_ocean"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_carbon_dioxide = 4
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 4
-	}
-
-	condition = {
-		has_technology = "tech_extreme_greenhouse"
-	}
-}
-
+# Frozen worlds #########
 # Frozen to Arctic
 terraform_link = {
 	from = "pc_frozen"
@@ -480,143 +327,8 @@ terraform_link = {
 	}
 }
 
-# Frozen to Arid
-terraform_link = {
-	from = "pc_frozen"
-	to = "pc_arid"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_carbon_dioxide = 4
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 1
-	}
-
-	condition = {
-		has_technology = "tech_extreme_greenhouse"
-	}
-}
-
-# Frozen to Desert
-terraform_link = {
-	from = "pc_frozen"
-	to = "pc_desert"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_carbon_dioxide = 6
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 1
-	}
-
-	condition = {
-		has_technology = "tech_extreme_greenhouse"
-	}
-}
-
-# Frozen to Tropical
-terraform_link = {
-	from = "pc_frozen"
-	to = "pc_tropical"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_carbon_dioxide = 6
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 4
-	}
-
-	condition = {
-		has_technology = "tech_extreme_greenhouse"
-	}
-}
-
-# Molten worlds, the colder you need them to become, the more solar protection you need to build
-# Molten to Continental
-terraform_link = {
-	from = "pc_molten"
-	to = "pc_continental"
-
-	#cost
-	energy = 2500
-	resources = {
-		sr_carbon = 4
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 3
-	}
-
-	condition = {
-		has_technology = "tech_high_alt_solarprotection"
-	}
-}
-
-# Molten to Ocean
-terraform_link = {
-	from = "pc_molten"
-	to = "pc_ocean"
-
-	#cost
-	energy = 2500
-#	minerals = 300
-	resources = {
-		sr_carbon = 4
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 4
-	}
-
-	condition = {
-		has_technology = "tech_high_alt_solarprotection"
-	}
-}
-
-# Molten to Arctic
-terraform_link = {
-	from = "pc_molten"
-	to = "pc_arctic"
-
-	#cost
-	energy = 2500
-#	minerals = 600
-	resources = {
-		sr_carbon = 6
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 3
-	}
-
-	condition = {
-		has_technology = "tech_high_alt_solarprotection"
-	}
-}
-
-# Molten to Tundra
-terraform_link = {
-	from = "pc_molten"
-	to = "pc_tundra"
-
-	#cost
-	energy = 2500
-#	minerals = 500
-	resources = {
-		sr_carbon = 5
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 3
-	}
-
-	condition = {
-		has_technology = "tech_high_alt_solarprotection"
-	}
-}
-
+# Molten worlds #########
+# ... the colder you need them to become, the more solar protection you need to build
 # Molten to Arid
 terraform_link = {
 	from = "pc_molten"
@@ -624,7 +336,6 @@ terraform_link = {
 
 	#cost
 	energy = 2500
-#	minerals = 100
 	resources = {
 		sr_carbon = 4
 		sr_oxygen = 5
@@ -644,7 +355,6 @@ terraform_link = {
 
 	#cost
 	energy = 2500
-#	minerals = 50
 	resources = {
 		sr_carbon = 2
 		sr_oxygen = 5
@@ -657,19 +367,17 @@ terraform_link = {
 	}
 }
 
-# Molten to Tropical
+# Molten to Toxic
 terraform_link = {
 	from = "pc_molten"
-	to = "pc_tropical"
+	to = "pc_toxic"
 
 	#cost
 	energy = 2500
-#	minerals = 100
 	resources = {
-		sr_carbon = 2
-		sr_oxygen = 5
-		sr_nitrogen = 5
-		sr_water = 4
+		sr_carbon = 6
+		sr_nitrogen = 8
+		sr_water = 2
 	}
 
 	condition = {
