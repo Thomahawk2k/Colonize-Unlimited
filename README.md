@@ -1,6 +1,10 @@
 # What is Colonize Unlimited©
 
-Colonize Unlimited© is a mod (:P) designed to allow the player greater freedom in their colonization, especially mid-to-late game. Instead of being limited to planets that already house life, one with Colonize Unlimited© will be able to colonize every rock-based planet, provided they have toasters . In addition, the player with Colonize Unlimited© will allow the player to make uninhabitable (rock-based) planets habitable using terraforming techniques in the late game.
+Colonize Unlimited© is designed to allow the player greater freedom in their colonization, especially mid-to-late game. Instead of being limited to planets that already house life, with Colonize Unlimited© one will be able to colonize every planet, provided they have toasters (aka robots).
+
+One can, however, raise the habitability of your newly colonized harsh planet:
+* By researching and/or building +habitability technologies and/or buildings
+* By terraforming (except for gas giants)
 
 Get it on Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id=682582076
 
@@ -34,14 +38,17 @@ Anything that changes the following:
 * prescripted_species_systems.txt
 * 00_tile_blockers.txt
 
-# To-Do
-
-* Fix bugs.
-* Find someone who can improve tile and technology artwork.
-
 # Currently known bugs
+Please report bugs on:
+* Steam Workshop: http://steamcommunity.com/sharedfiles/filedetails/discussions/682582076
+* Github: https://github.com/Thomahawk2k/Colonize-Unlimited/issues
 
-The 'Unlocks Feature:' text from the new technologies isn't orange like other technologies.
-Please report any bug any inconsistencies that are related to this mod to me. Thanks in advance!
+# Credits
+Main Authors
+* Thomahawk2k
+* Dosaki
 
-I hope you'll enjoy!
+Contributors
+* satyrlord (artwork)
+
+Enjoy!
