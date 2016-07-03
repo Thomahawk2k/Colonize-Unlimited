@@ -17,6 +17,7 @@ Get it on Steam Workshop: https://steamcommunity.com/sharedfiles/filedetails/?id
   * New building to increase habitability
 * Terraforming:
   * New techs to allow you to terraform all planets but Gas Giants.
+    * ![Terraforming Links](https://github.com/Thomahawk2k/Colonize-Unlimited/blob/master/terraforming_links.png)
   * Replaced terraforming resources with:
     * Hydrogen
     * Oxygen
