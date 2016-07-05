@@ -30,7 +30,7 @@ terraform_link = {
 	energy = 2500
 	resources = {
 		sr_nitrogen = 5
-		sr_carbon_dioxide = 8
+		sr_carbon_dioxide = 4
 		sr_hydrogen = 4
 	}
 
@@ -48,7 +48,7 @@ terraform_link = {
 	energy = 2500
 	resources = {
 		sr_nitrogen = 5
-		sr_carbon_dioxide = 10
+		sr_carbon_dioxide = 5
 		sr_hydrogen = 4
 		sr_water = 1
 	}
@@ -68,7 +68,7 @@ terraform_link = {
 	energy = 2500
 	resources = {
 		sr_nitrogen = 5
-		sr_water = 8
+		sr_water = 5
 		sr_carbon = 2
 	}
 
@@ -88,7 +88,7 @@ terraform_link = {
 	energy = 2500
 	resources = {
 		sr_nitrogen = 5
-		sr_water = 10
+		sr_water = 6
 		sr_carbon = 1
 	}
 
@@ -124,10 +124,9 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbon_dioxide = 6
-		sr_oxygen = 1
 		sr_nitrogen = 5
 		sr_water = 1
+		sr_carbon_dioxide = 5
 	}
 
 	condition = {
@@ -143,7 +142,7 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbon_dioxide = 6
+		sr_carbon_dioxide = 5
 		sr_nitrogen = 5
 		sr_hydrogen = 4
 	}
@@ -163,8 +162,8 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_oxygen = 5
 		sr_nitrogen = 5
+		sr_oxygen = 5
 		sr_water = 1
 		sr_carbon_dioxide = 1
 	}
@@ -202,10 +201,11 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_carbon = 4
+		sr_carbon = 1
 		sr_carbon_dioxide = 3
-		sr_oxygen = 5
+		sr_oxygen = 4
 		sr_nitrogen = 5
+		sr_hydrogen = 5
 	}
 
 	condition = {
@@ -221,9 +221,9 @@ terraform_link = {
 	#cost
 	energy = 2500
 	resources = {
-		sr_oxygen = 5
 		sr_nitrogen = 5
 		sr_water = 1
+		sr_oxygen = 5
 	}
 
 	condition = {
@@ -262,7 +262,7 @@ terraform_link = {
 		sr_carbon = 2
 		sr_oxygen = 5
 		sr_nitrogen = 5
-		sr_water = 3
+		sr_water = 1
 	}
 
 	condition = {
@@ -300,7 +300,6 @@ terraform_link = {
 		sr_carbon_dioxide = 2
 		sr_oxygen = 5
 		sr_nitrogen = 5
-		sr_water = 4
 	}
 
 	condition = {
@@ -319,7 +318,6 @@ terraform_link = {
 		sr_carbon_dioxide = 3
 		sr_oxygen = 5
 		sr_nitrogen = 5
-		sr_water = 3
 	}
 
 	condition = {
@@ -377,7 +375,7 @@ terraform_link = {
 	resources = {
 		sr_carbon = 6
 		sr_nitrogen = 8
-		sr_water = 2
+		sr_water = 1
 	}
 
 	condition = {
