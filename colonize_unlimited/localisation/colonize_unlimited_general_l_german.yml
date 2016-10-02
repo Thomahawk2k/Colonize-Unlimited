@@ -1,0 +1,2 @@
+﻿l_german:
+  requires_building_capital_and_not_water_void:0 "§RBenötigt §Y$building_capital_1$§! auf einem Planeten mit Wasser. (Keine Wüste, Arid, Gasriese, geschmolzen, karge, giftig oder tod)§!"

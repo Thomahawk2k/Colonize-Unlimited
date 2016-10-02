@@ -1,0 +1,13 @@
+﻿l_german:
+  sr_nitrogen:0 "Stickstoff"
+  sr_nitrogen_desc:0 "Auffindbar auf allen bewohnbaren Welten, Stickstoff ist ein Hauptbestandteil von organischen Leben und wird benötigt um Planeten zu terraformen, die nicht genug haben um leben zu beherbergen."
+  sr_oxygen:0 "Sauerstoff"
+  sr_oxygen_desc:0 "Auffindbar auf allen bewohnbaren Welten, Sauerstoff ist ein entscheidenes Element für Photosyntese und folglich dem Kohlenstoffkreislauf. Planeten die nicht genug haben um leben zu beherbergen benötigen Sauerstoff um terraformiert zu werden."
+  sr_carbon_dioxide:0 "Kohlenstoffdioxid"
+  sr_carbon_dioxide_desc:0 "Vermutlich das bekanntiste Treibhausgas, Kohlenstoffdioxid ist ein entscheidener Stoff um Planeten aufzuwärmen. Zusätzlich ist es ein entscheidener Bestantteil der Photosyntese, Planeten ohne Atmosphäre benötigen zumindest ein wenig um terrafomiert zu werden."
+  sr_hydrogen:0 "Wasserstoff"
+  sr_hydrogen_desc:0 "Auffindbar in Sternen (dort jedoch unzugänglich) und in Gasriesen, Wasserstoff ist kein entscheidenes Element beim terraformen, wir können es jedoch mit Sauerstoff aus der Atmosphäre zu Wasser verbrennen, was uns Energie als Nebenprodukt gibt."
+  sr_water:0 "Wasser"
+  sr_water_desc:0 "Als entscheidener Bestandteil vom organischem Leben ist Wasser oder Dihydrogenmonoxid auf bewohnbaren Welten verfügbar. Auch wenn es in bestimten Klimazonen selten ist. Wasser ist entscheident um trockene Planeten feuchter und unbewohnbare bewohnbar zu machen."
+  sr_carbon:0 "Diamant"
+  sr_carbon_desc:0 "Als kristaliner Kohlenstoff in reinster Form, ist Diamant die härteste natürlich vorkommende Ressource. Zusätzlich, es spiegelt. Durch den Einsatz spezieller Aerosoltechniken können wir das Sonnenlicht begrenzen, dass die Planetenoverfläche erreicht, was uns erlaubt den Planeten effektiv abzukühlen."
