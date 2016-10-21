@@ -77,6 +77,8 @@ d_mineral_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 					is_planet_class = pc_frozen
 				}
 			}
@@ -125,6 +127,8 @@ d_rich_mineral_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 				}
 			}
 		}
@@ -168,6 +172,8 @@ d_vast_mineral_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 					is_planet_class = pc_frozen
 					is_planet_class = pc_barren
 					is_planet_class = pc_barren_cold
@@ -222,6 +228,8 @@ d_immense_mineral_deposit = {
 						is_planet_class = pc_desert
 						is_planet_class = pc_tundra
 						is_planet_class = pc_arctic
+						is_planet_class = pc_alpine
+						is_planet_class = pc_savannah
 						is_planet_class = pc_nuked
 					}
 					OR = {
@@ -283,6 +291,8 @@ d_mineral_energy_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 					is_planet_class = pc_barren
 					is_planet_class = pc_barren_cold
 					is_planet_class = pc_frozen
@@ -315,6 +325,8 @@ d_mineral_food_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 				}
 			}
 		}
@@ -343,6 +355,8 @@ d_rich_mineral_food_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 				}
 			}
 		}
@@ -371,6 +385,8 @@ d_rich_food_mineral_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 				}
 			}
 		}
@@ -400,7 +416,7 @@ d_energy_deposit = {
 			}
 		}
 		modifier = {
-			weight = 15
+			weight = 25
 			planet = {
 				OR = {
 					is_planet_class = pc_toxic
@@ -413,6 +429,8 @@ d_energy_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 				}
 			}
 		}
@@ -438,7 +456,7 @@ d_rich_energy_deposit = {
 			}
 		}
 		modifier = {
-			weight = 4
+			weight = 15
 			planet = {
 				OR = {
 					is_planet_class = pc_toxic
@@ -451,6 +469,8 @@ d_rich_energy_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 				}
 			}
 		}
@@ -468,7 +488,7 @@ d_rich_energy_deposit = {
 			}
 		}
 		modifier = {
-			weight = 30
+			weight = 25
 			planet = {
 				is_planet_class = pc_gas_giant
 			}
@@ -499,7 +519,7 @@ d_vast_energy_deposit = {
 			}
 		}
 		modifier = {
-			weight = 5
+			weight = 8
 			planet = {
 				is_planet_class = pc_gas_giant
 			}
@@ -517,7 +537,7 @@ d_immense_energy_deposit = {
 	drop_weight = {
 		weight = 0
 		modifier = {
-			weight = 1
+			weight = 2
 			planet = {
 				is_planet_class = pc_gas_giant
 			}
@@ -547,6 +567,8 @@ d_farmland_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 				}
 			}
 		}
@@ -577,6 +599,8 @@ d_rich_farmland_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 				}
 			}
 		}
@@ -607,6 +631,8 @@ d_vast_farmland_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 				}
 			}
 		}
@@ -643,6 +669,9 @@ d_society_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
+					is_planet_class = pc_nuked
 					is_planet_class = pc_barren
 					is_planet_class = pc_toxic
 					is_planet_class = pc_barren_cold
@@ -685,6 +714,8 @@ d_rich_society_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 					is_planet_class = pc_nuked
 					is_planet_class = pc_barren
 					is_planet_class = pc_toxic
@@ -743,6 +774,8 @@ d_vast_society_deposit = {
 						is_planet_class = pc_desert
 						is_planet_class = pc_tundra
 						is_planet_class = pc_arctic
+						is_planet_class = pc_alpine
+						is_planet_class = pc_savannah
 					}
 					OR = {
 						has_planet_modifier = "pm_titanic_life"
@@ -805,6 +838,8 @@ d_immense_society_deposit = {
 						is_planet_class = pc_desert
 						is_planet_class = pc_tundra
 						is_planet_class = pc_arctic
+					  is_planet_class = pc_alpine
+					  is_planet_class = pc_savannah
 					}
 					OR = {
 						has_planet_modifier = "pm_titanic_life"
@@ -858,7 +893,10 @@ d_physics_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 					is_planet_class = pc_tropical
+					is_planet_class = pc_nuked
 					is_planet_class = pc_barren
 					is_planet_class = pc_barren_cold
 					is_planet_class = pc_toxic
@@ -891,6 +929,9 @@ d_rich_physics_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
+					is_planet_class = pc_nuked
 					is_planet_class = pc_toxic
 				}
 			}
@@ -953,6 +994,8 @@ d_vast_physics_deposit = {
 						is_planet_class = pc_desert
 						is_planet_class = pc_tundra
 						is_planet_class = pc_arctic
+					  is_planet_class = pc_alpine
+					  is_planet_class = pc_savannah
 					}
 					OR = {
 						has_planet_modifier = "pm_chthonian_planet"
@@ -1012,6 +1055,8 @@ d_immense_physics_deposit = {
 						is_planet_class = pc_desert
 						is_planet_class = pc_tundra
 						is_planet_class = pc_arctic
+					  is_planet_class = pc_alpine
+					  is_planet_class = pc_savannah
 					}
 					OR = {
 						has_planet_modifier = "pm_chthonian_planet"
@@ -1074,6 +1119,9 @@ d_engineering_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
+					is_planet_class = pc_nuked
 					is_planet_class = pc_toxic
 					is_planet_class = pc_barren_cold
 					is_planet_class = pc_frozen
@@ -1106,11 +1154,14 @@ d_rich_engineering_deposit = {
 					is_planet_class = pc_desert
 					is_planet_class = pc_tundra
 					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
+					is_planet_class = pc_nuked
 				}
 			}
 		}
 		modifier = {
-			weight = 3
+			weight = 4
 			planet = {
 				OR = {
 					is_planet_class = pc_frozen
@@ -1150,7 +1201,7 @@ d_vast_engineering_deposit = {
 			}
 		}
 		modifier = {
-			weight = 1
+			weight = 2
 			planet = {
 				AND = {
 					OR = {
@@ -1163,6 +1214,8 @@ d_vast_engineering_deposit = {
 						is_planet_class = pc_desert
 						is_planet_class = pc_tundra
 						is_planet_class = pc_arctic
+					  is_planet_class = pc_alpine
+					  is_planet_class = pc_savannah
 					}
 					has_planet_modifier = "pm_unstable_tectonics"
 				}
@@ -1229,6 +1282,8 @@ d_immense_engineering_deposit = {
 						is_planet_class = pc_desert
 						is_planet_class = pc_tundra
 						is_planet_class = pc_arctic
+						is_planet_class = pc_alpine
+						is_planet_class = pc_savannah
 					}
 					has_planet_modifier = "pm_unstable_tectonics"
 				}
@@ -1360,7 +1415,7 @@ d_garanthium_deposit = {
 	drop_weight = {
 		weight = 0
 		modifier = {
-			weight = 6
+			weight = 5
 			planet = {
 				AND = {
 					is_asteroid = yes
@@ -1397,7 +1452,7 @@ d_lythuric_gas_deposit = {
 	drop_weight = {
 		weight = 0
 		modifier = {
-			weight = 8
+			weight = 5
 			planet = {
 				AND = {
 					is_planet_class = pc_gas_giant
@@ -1434,7 +1489,7 @@ d_engos_deposit = {
 	drop_weight = {
 		weight = 0
 		modifier = {
-			weight = 14
+			weight = 5
 			planet = {
 				AND = {
 					OR = {
@@ -1468,7 +1523,7 @@ d_teldar_deposit = {
 	drop_weight = {
 		weight = 0
 		modifier = {
-			weight = 4
+			weight = 5
 			planet = {
 				AND = {
 					OR = {
@@ -1508,12 +1563,12 @@ d_pitharan_deposit = {
 	drop_weight = {
 		weight = 0
 		modifier = {
-			weight = 12
+			weight = 5
 			planet = {
 				AND = {
 					OR = {
 						is_planet_class = pc_toxic
-						is_planet_class = pc_gaia
+						is_planet_class = pc_gas_giant
 					}
 					has_strategic_resource = no
 				}
@@ -1533,7 +1588,7 @@ d_orillium_deposit = {
 		engineering_research = 2
 		sr_orillium = 1
 	}
-	station = shipclass_mining_station
+	station = shipclass_research_station
 	orbital_weight = {
 		weight = @clusterOrbitalWeight
 	}
@@ -1541,7 +1596,7 @@ d_orillium_deposit = {
 	drop_weight = {
 		weight = 0
 		modifier = {
-			weight = 6
+			weight = 5
 			planet = {
 				AND = {
 					is_asteroid = yes
@@ -1569,7 +1624,7 @@ d_neutronium_deposit = {
 	}
 	station = shipclass_research_station
 	orbital_weight = {
-		weight = 100
+		weight = 50
 	}
 
 	drop_weight = {
@@ -1660,47 +1715,28 @@ d_dark_matter_deposit = {
 
 d_betharian_deposit = {
 	resources = {
-		minerals = 3
+		energy = 1
 		sr_betharian = 1
 	}
 	station = shipclass_mining_station
-	orbital_weight = {
-		weight = 80
-	}
+	is_orbital_slot = no
 
 	drop_weight = {
 		weight = 0
 		modifier = {
-			factor = 0.10
+			weight = 2
 			planet = {
-				is_inside_nebula = no
-			}
-		}
-		modifier = {
-			weight = 1
-			planet = {
-				AND = {
 					OR = {
 						is_planet_class = pc_gaia
-						is_planet_class = pc_frozen
-						is_planet_class = pc_toxic
-						is_planet_class = pc_barren
-						is_planet_class = pc_barren_cold
-						is_planet_class = pc_molten
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0
-			planet = {
-				OR = {
-					has_deposit = "d_immense_mineral_deposit"
-					has_deposit = "d_immense_energy_deposit"
-					has_deposit = "d_immense_society_deposit"
-					has_deposit = "d_immense_physics_deposit"
-					has_deposit = "d_immense_engineering_deposit"
-					has_strategic_resource = yes
+					is_planet_class = pc_continental
+					is_planet_class = pc_tropical
+					is_planet_class = pc_ocean
+					is_planet_class = pc_arid
+					is_planet_class = pc_desert
+					is_planet_class = pc_tundra
+					is_planet_class = pc_arctic
+					is_planet_class = pc_alpine
+					is_planet_class = pc_savannah
 				}
 			}
 		}
@@ -1733,6 +1769,8 @@ d_alien_pets_deposit = {
 						is_planet_class = pc_desert
 						is_planet_class = pc_tundra
 						is_planet_class = pc_arctic
+						is_planet_class = pc_alpine
+						is_planet_class = pc_savannah
 					}
 					has_owner = no
 				}
@@ -1770,13 +1808,13 @@ d_satramene_deposit = {
 	}
 	station = shipclass_mining_station
 	orbital_weight = {
-		weight = 60
+		weight = 50
 	}
 
 	drop_weight = {
 		weight = 0
 		modifier = {
-			weight = 2
+			weight = 1
 			planet = {
 				OR = {
 					is_planet_class = pc_toxic

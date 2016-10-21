@@ -5,53 +5,71 @@
 sr_hydrogen = {
 	AI_category = strategic_resource
 	prerequisites = { "tech_atmosphere_farming" }
-	tradable = yes
+	tradable = no
 	is_rare = yes
-	
-	num_ai_wanted = 40
+	is_global = yes
+
+	modifier = {
+		terraforming_cost_mult = -0.25
+	}
 }
 
 sr_oxygen = {
 	AI_category = strategic_resource
 	prerequisites = { "tech_atmosphere_farming" }
-	tradable = yes
+	tradable = no
 	is_rare = yes
-	
-	num_ai_wanted = 100
+	is_global = yes
+
+	modifier = {
+		terraforming_cost_mult = -0.25
+	}
 }
 
 sr_nitrogen = {
 	AI_category = strategic_resource
 	prerequisites = { "tech_atmosphere_farming" }
-	tradable = yes
+	tradable = no
 	is_rare = yes
-	
-	num_ai_wanted = 40
+	is_global = yes
+
+	modifier = {
+		terraforming_cost_mult = -0.25
+	}
 }
 
 sr_carbon = {
 	AI_category = strategic_resource
 	prerequisites = { "tech_terrestrial_sculpting" }
-	tradable = yes
+	tradable = no
 	is_rare = yes
-	
-	num_ai_wanted = 100
+	is_global = yes
+
+	modifier = {
+		terraforming_cost_mult = -0.25
+	}
 }
 
 sr_water = {
 	AI_category = strategic_resource
 	prerequisites = { "tech_terrestrial_sculpting" }
-	tradable = yes
+	tradable = no
 	is_rare = yes
-	
-	num_ai_wanted = 100
+	is_global = yes
+
+	modifier = {
+		terraforming_cost_mult = -0.25
+	}
 }
 
 sr_carbon_dioxide = {
 	AI_category = strategic_resource
 	prerequisites = { "tech_terrestrial_sculpting" }
-	tradable = yes
+	tradable = no
 	is_rare = yes
-	
-	num_ai_wanted = 100
+	is_global = yes
+
+	modifier = {
+		terraforming_cost_mult = -0.25
+	}
 }

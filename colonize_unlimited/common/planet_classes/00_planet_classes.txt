@@ -1,6 +1,8 @@
 # Star glow from sun is set under atmosphere in   00_planet_classes
 # Star surface is set in worldgfx file for each star
 # Effects are set in particle effect for each star
+# New planets also need planet tiles (game\gfx\interface\icons\tile_backgrounds)
+# New planets need surface background (game\gfx\portraits\environments)
 
 ### EXAMPLE:
 #pc_tropical = {
@@ -38,19 +40,22 @@
 @planet_standard_scale = 11
 @habitable_planet_max_size = 25
 @habitable_planet_min_size = 12
-@habitable_moon_max_size = 12
-@habitable_moon_min_size = 8
+@habitable_moon_max_size = 15
+@habitable_moon_min_size = 10
 @habitable_min_distance = 60
-@habitable_max_distance = 120
-@habitable_spawn_odds = 2
+@habitable_max_distance = 100
+@habitable_spawn_odds = 1
 
 # ###########
 # Habitable Planets
 # ###########
 
+# Dry
 pc_desert = {
 	entity = "desert_planet"
 	icon_frame = 1
+
+  climate = "dry"
 
 	entity_scale = @planet_standard_scale
 
@@ -75,40 +80,14 @@ pc_desert = {
 	production_spawn_chance = 0.4
 
 	colonizable = yes
-	colonization_tech = { "tech_desert_colonization" }
-}
-
-pc_tropical = {
-	entity = "tropical_planet"
-	entity_scale = @planet_standard_scale
-	icon_frame = 5
-
-	atmosphere_color 		= hsv { 0.58	0.3 0.7 }
-	atmosphere_intensity 	= 1.0
-	atmosphere_width 		= 0.5
-
-	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
-
-	min_distance_from_sun = @habitable_min_distance
-	max_distance_from_sun = @habitable_max_distance
-	spawn_odds = @habitable_spawn_odds
-
-	extra_orbit_size = 0
-	extra_planet_count = 0
-
-	chance_of_ring = 0.2
-
-	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
-	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
-
-	colonizable = yes
-	colonization_tech = { "tech_tropical_colonization" }
 }
 
 pc_arid = {
 	entity = "arid_planet"
 	entity_scale = @planet_standard_scale
 	icon_frame = 2
+
+	climate = "dry"
 
 	atmosphere_color 		= hsv { 0.50 0.3 0.7 }		#DONE
 	atmosphere_intensity 	= 1.0
@@ -129,13 +108,71 @@ pc_arid = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 
 	colonizable = yes
-	colonization_tech = { "tech_arid_colonization" }
+}
+
+pc_savannah = {
+	entity = "savannah_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 20
+
+	climate = "dry"
+
+	atmosphere_color 		= hsv { 0.50 0.3 0.7 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	min_distance_from_sun = @habitable_min_distance
+	max_distance_from_sun = @habitable_max_distance
+	spawn_odds = @habitable_spawn_odds
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_arid.dds"
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+
+	chance_of_ring = 0.2
+
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+
+	colonizable = yes
+}
+
+# Temperate
+pc_tropical = {
+	entity = "tropical_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 5
+
+	climate = "wet"
+
+	atmosphere_color 		= hsv { 0.58	0.3 0.7 }
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_tropical.dds"
+
+	min_distance_from_sun = @habitable_min_distance
+	max_distance_from_sun = @habitable_max_distance
+	spawn_odds = @habitable_spawn_odds
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+
+	chance_of_ring = 0.2
+
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+
+	colonizable = yes
 }
 
 pc_continental = {
 	entity = "continental_planet"
 	entity_scale = @planet_standard_scale
 	icon_frame = 4
+
+	climate = "wet"
 
 	atmosphere_color 		= hsv { 0.59 0.45 0.95 }		#DONE
 	atmosphere_intensity 	= 1.0
@@ -157,13 +194,14 @@ pc_continental = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 
 	colonizable = yes
-	colonization_tech = { "tech_continental_colonization" }
 }
 
 pc_ocean = {
 	entity = "ocean_planet"
 	entity_scale = @planet_standard_scale
 	icon_frame = 6
+
+	climate = "wet"
 
 	atmosphere_color 		= hsv { 0.58 0.5 0.9 }		#DONE
 	atmosphere_intensity 	= 1.0
@@ -184,13 +222,15 @@ pc_ocean = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 
 	colonizable = yes
-	colonization_tech = { "tech_ocean_colonization" }
 }
 
+# Cold
 pc_tundra = {
 	entity = "tundra_planet"
 	entity_scale = @planet_standard_scale
 	icon_frame = 3
+
+	climate = "cold"
 
 	atmosphere_color 		= hsv { 0.58 0.3 0.8 }		#DONE
 	atmosphere_intensity 	= 1.0
@@ -211,13 +251,14 @@ pc_tundra = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 
 	colonizable = yes
-	colonization_tech = { "tech_tundra_colonization" }
 }
 
 pc_arctic = {
 	entity = "arctic_planet"
 	entity_scale = @planet_standard_scale
 	icon_frame = 7
+
+	climate = "cold"
 
 	atmosphere_color 		= hsv { 0.48 0.15 0.8 }		#DONE
 	atmosphere_intensity 	= 1.0
@@ -238,7 +279,34 @@ pc_arctic = {
 	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 
 	colonizable = yes
-	colonization_tech = { "tech_arctic_colonization" }
+}
+
+pc_alpine = {
+	entity = "alpine_planet"
+	entity_scale = @planet_standard_scale
+	icon_frame = 19
+
+	climate = "cold"
+
+	atmosphere_color 		= hsv { 0.48 0.15 0.8 }		#DONE
+	atmosphere_intensity 	= 1.0
+	atmosphere_width 		= 0.5
+
+	city_color_lut = "gfx/portraits/misc/colorcorrection_arctic.dds"
+
+	min_distance_from_sun = @habitable_min_distance
+	max_distance_from_sun = @habitable_max_distance
+	spawn_odds = @habitable_spawn_odds
+
+	extra_orbit_size = 0
+	extra_planet_count = 0
+
+	chance_of_ring = 0.2
+
+	planet_size = { min = @habitable_planet_min_size max = @habitable_planet_max_size }
+	moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
+
+	colonizable = yes
 }
 
 # ###########
@@ -264,13 +332,12 @@ pc_gas_giant = {
 	can_be_moon = no
 	chance_of_ring = 0.6
 
-	starting_planet = no
-
 	planet_size = { min = 20 max = 30 }
 	moon_size = { min = 8 max = 15 }
 
-	colonizable = yes
-	colonization_tech = { "tech_floating_cities" }
+	production_spawn_chance = 0.5
+
+	colonizable = no
 }
 
 pc_asteroid = {
@@ -340,7 +407,6 @@ pc_barren = {
 	moon_size = { min = 6 max = 10 }
 
 	colonizable = yes
-	colonization_tech = { "tech_droid_workers" }
 	starting_planet = no
 }
 
@@ -366,7 +432,6 @@ pc_barren_cold = {
 	moon_size = { min = 6 max = 10 }
 
 	colonizable = yes
-	colonization_tech = { "tech_droid_workers" }
 	starting_planet = no
 }
 
@@ -393,7 +458,6 @@ pc_toxic = {
 	moon_size = { min = 6 max = 10 }
 
 	colonizable = yes
-	colonization_tech = { "tech_droid_workers" }
 	starting_planet = no
 }
 
@@ -419,7 +483,6 @@ pc_frozen = {
 	moon_size = { min = 6 max = 10 }
 
 	colonizable = yes
-	colonization_tech = { "tech_droid_workers" }
 	starting_planet = no
 }
 
@@ -453,7 +516,6 @@ pc_nuked = {
 
 	starting_planet = no
 	colonizable = yes
-	colonization_tech = { "tech_atmospheric_manipulation" }
 }
 
 pc_shielded = {
@@ -545,7 +607,6 @@ pc_infested = {
 	show_city = no
 }
 
-
 pc_gaia = {
 	entity = "gaia_planet"
 	picture = pc_continental # there's no unique gaia_planet picture
@@ -561,7 +622,7 @@ pc_gaia = {
 
 	min_distance_from_sun = 60
 	max_distance_from_sun = 95
-	spawn_odds = 0.5
+	spawn_odds = 0.05
 
 	extra_orbit_size = 0
 	extra_planet_count = 0
@@ -934,12 +995,64 @@ pc_ringworld_seam_damaged = {
 random_list = {
 	name = "rl_habitable_normal"
 	planets = {
+		"pc_continental"
 		"pc_desert"
 		"pc_tropical"
 		"pc_arid"
 		"pc_ocean"
 		"pc_tundra"
 		"pc_arctic"
+		"pc_alpine"
+		"pc_savannah"
+	}
+}
+
+random_list = {
+	name = "rl_habitable_special"
+	planets = {
+		"pc_gaia"
+	}
+}
+
+random_list = {
+	name = "rl_unhabitable_planets"
+	planets = {
+		"pc_gas_giant"
+		"pc_molten"
+		"pc_barren"
+		"pc_barren_cold"
+		"pc_toxic"
+		"pc_frozen"
+		"pc_nuked"
+		"pc_infested"
+	}
+}
+
+random_list = {
+	name = "rl_all_planets"
+	planets = {
 		"pc_continental"
+		"pc_desert"
+		"pc_tropical"
+		"pc_arid"
+		"pc_ocean"
+		"pc_tundra"
+		"pc_arctic"
+		"pc_alpine"
+		"pc_savannah"
+		"pc_asteroid"
+		"pc_gas_giant"
+		"pc_molten"
+		"pc_barren"
+		"pc_barren_cold"
+		"pc_toxic"
+		"pc_frozen"
+		"pc_nuked"
+		"pc_shielded"
+		"pc_ai"
+		"pc_infested"
+		"pc_shielded"
+		"pc_ai"
+		"pc_gaia"
 	}
 }

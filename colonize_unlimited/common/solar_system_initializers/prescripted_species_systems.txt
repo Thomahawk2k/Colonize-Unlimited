@@ -6,13 +6,13 @@
 ### Sol System
 sol_system_initializer = {
 	name = "Sol"
-	
+
 	class = "sc_g"
 	asteroids_distance = 120
 	flags = { sol_system sol }
-	
+
 	usage = custom_empire
-	
+
 	planet = {
 		name = "Sol"
 		class = "pc_g_star"
@@ -21,7 +21,7 @@ sol_system_initializer = {
 		size = 30
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Mercury"
 		class = "pc_molten"
@@ -30,7 +30,7 @@ sol_system_initializer = {
 		size = 10
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Venus"
 		class = "pc_toxic"
@@ -39,7 +39,7 @@ sol_system_initializer = {
 		size = 20
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Earth"
 		class = "pc_continental"
@@ -51,11 +51,11 @@ sol_system_initializer = {
 		entity = "continental_planet_earth_entity"
 		tile_blockers = none
 		modifiers = none
-		
+
 		init_effect = {
 			prevent_anomaly = yes
 		}
-		
+
 		init_effect = {
 			random_tile = {
 				limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
@@ -64,11 +64,11 @@ sol_system_initializer = {
 					resource = food
 					amount = 1
 					replace = yes
-				}	
+				}
 				add_resource = {
 					resource = minerals
 					amount = 1
-				}					
+				}
 				random_neighboring_tile = {
 					limit = { has_blocker = no has_building = no }
 					set_building = "building_hydroponics_farm_1"
@@ -76,7 +76,7 @@ sol_system_initializer = {
 						resource = food
 						amount = 1
 						replace = yes
-					}						
+					}
 				}
 				random_neighboring_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -85,7 +85,7 @@ sol_system_initializer = {
 						resource = energy
 						amount = 1
 						replace = yes
-					}						
+					}
 				}
 				random_neighboring_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -94,7 +94,7 @@ sol_system_initializer = {
 						resource = energy
 						amount = 1
 						replace = yes
-					}						
+					}
 				}
 				random_neighboring_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -103,8 +103,8 @@ sol_system_initializer = {
 						resource = minerals
 						amount = 1
 						replace = yes
-					}						
-				}				
+					}
+				}
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
@@ -113,7 +113,7 @@ sol_system_initializer = {
 					resource = engineering_research
 					amount = 1
 					replace = yes
-				}				
+				}
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
@@ -122,7 +122,7 @@ sol_system_initializer = {
 					resource = society_research
 					amount = 1
 					replace = yes
-				}				
+				}
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
@@ -131,7 +131,7 @@ sol_system_initializer = {
 					resource = physics_research
 					amount = 1
 					replace = yes
-				}				
+				}
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
@@ -140,7 +140,7 @@ sol_system_initializer = {
 					resource = energy
 					amount = 2
 					replace = yes
-				}					
+				}
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
@@ -149,7 +149,7 @@ sol_system_initializer = {
 					resource = food
 					amount = 1
 					replace = yes
-				}					
+				}
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
@@ -158,7 +158,7 @@ sol_system_initializer = {
 					resource = energy
 					amount = 1
 					replace = yes
-				}				
+				}
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
@@ -166,10 +166,10 @@ sol_system_initializer = {
 					resource = food
 					amount = 1
 					replace = yes
-				}				
-			}			
+				}
+			}
 		}
-		
+
 		moon = {
 			name = "Luna"
 			class = "pc_barren_cold"
@@ -180,7 +180,7 @@ sol_system_initializer = {
 #			entity = "cold_barren_planet_luna_entity"
 		}
 	}
-	
+
 	planet = {
 		name = "Mars"
 		class = "pc_barren"
@@ -190,7 +190,7 @@ sol_system_initializer = {
 		has_ring = no
 #		entity = "barren_planet_mars_entity"
 	}
-	
+
 	planet = {
 		name = "1 Ceres"
 		class = "pc_asteroid"
@@ -199,7 +199,7 @@ sol_system_initializer = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "2 Pallas"
 		class = "pc_asteroid"
@@ -208,7 +208,7 @@ sol_system_initializer = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "3 Juno"
 		class = "pc_asteroid"
@@ -217,7 +217,7 @@ sol_system_initializer = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "4 Vesta"
 		class = "pc_asteroid"
@@ -226,7 +226,7 @@ sol_system_initializer = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Jupiter"
 		class = "pc_gas_giant"
@@ -236,7 +236,7 @@ sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_jupiter_entity"
 		change_orbit = 6
-		
+
 		moon = {
 			name = "Io"
 			class = "pc_molten"
@@ -270,7 +270,7 @@ sol_system_initializer = {
 			has_ring = no
 		}
 	}
-	
+
 	planet = {
 		name = "Saturn"
 		class = "pc_gas_giant"
@@ -280,7 +280,7 @@ sol_system_initializer = {
 		has_ring = yes
 		entity = "gas_giant_05_entity"
 		change_orbit = 7
-		
+
 		moon = {
 			name = "Titan"
 			class = "pc_frozen"
@@ -290,7 +290,7 @@ sol_system_initializer = {
 			has_ring = no
 		}
 	}
-	
+
 	planet = {
 		name = "Uranus"
 		class = "pc_gas_giant"
@@ -300,7 +300,7 @@ sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_03_entity"
 	}
-	
+
 	planet = {
 		name = "Neptune"
 		class = "pc_gas_giant"
@@ -310,7 +310,7 @@ sol_system_initializer = {
 		has_ring = no
 		entity = "gas_giant_02_entity"
 		change_orbit = 4
-		
+
 		moon = {
 			name = "Triton"
 			class = "pc_frozen"
@@ -320,13 +320,13 @@ sol_system_initializer = {
 			has_ring = no
 		}
 	}
-	
+
 	neighbor_system = {
-		distance = { min = 10 max = @distance }	
+		distance = { min = 10 max = @distance }
 		initializer = "sol_neighbor_t1"
 	}
 	neighbor_system = {
-		distance = { min = 10 max = @distance }	
+		distance = { min = 10 max = @distance }
 		initializer = "sol_neighbor_t1_first_colony"
 	}
 }
@@ -344,33 +344,33 @@ sol_neighbor_t1 = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 	}
-	
+
 	change_orbit = 45
-	
+
 	planet = {
 		count = { min = 0 max = 2 }
 		orbit_distance = 20
 		change_orbit = @base_moon_distance
-		
+
 		moon = {
 			count = { min = 0 max = 1 }
 			orbit_distance = 5
 		}
 	}
-	
+
 	planet = {
 		count = { min = 2 max = 5 }
 		orbit_distance = 20
 	}
-	
+
 	neighbor_system = {
-		distance = { min = 10 max = @distance }	
+		distance = { min = 10 max = @distance }
 		initializer = "sol_neighbor_t2_second_colony"
 	}
 }
 
 # Neighbor Tier 1 First Colony
-sol_neighbor_t1_first_colony = {	
+sol_neighbor_t1_first_colony = {
 	name = "Alpha Centauri"
 	class = sc_g
 
@@ -383,21 +383,21 @@ sol_neighbor_t1_first_colony = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 	}
-	
+
 	change_orbit = 45
-	
+
 	planet = {
 		count = { min = 0 max = 2 }
 		orbit_distance = 20
-		
+
 		change_orbit = @base_moon_distance
-		
+
 		moon = {
 			count = { min = 0 max = 1 }
 			orbit_distance = 5
 		}
 	}
-	
+
 	planet = {
 		count = 1
 		orbit_distance = 25
@@ -405,21 +405,21 @@ sol_neighbor_t1_first_colony = {
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 12 max = 18 }
 	}
-	
+
 	planet = {
 		count = { min = 2 max = 5 }
 		orbit_distance = 25
-		
+
 		change_orbit = @base_moon_distance
-		
-		moon = {			
+
+		moon = {
 			count = { min = 0 max = 1 }
 			orbit_distance = 5
 		}
 	}
-	
+
 	neighbor_system = {
-		distance = { min = 10 max = @distance }	
+		distance = { min = 10 max = @distance }
 		initializer = "sol_neighbor_t2"
 	}
 }
@@ -440,28 +440,28 @@ sol_neighbor_t2 = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 	}
-	
+
 	planet = {
 		count = 1
 		orbit_distance = 45
 	}
-	
+
 	change_orbit = 25
-	
+
 	planet = {
 		count = { min = 1 max = 3 }
 		class = random_asteroid
 		orbit_distance = 0
 		orbit_angle = { min = 0 max = 360 }
 	}
-	
+
 	planet = {
 		count = { min = 2 max = 5 }
 		orbit_distance = 25
-		
+
 		change_orbit = @base_moon_distance
-		
-		moon = {		
+
+		moon = {
 			count = { min = 0 max = 1 }
 			orbit_distance = 5
 		}
@@ -482,22 +482,22 @@ sol_neighbor_t2_second_colony = {
 		size = { min = 20 max = 30 }
 		has_ring = no
 	}
-	
+
 	change_orbit = 25
-	
+
 	planet = {
 		count = 2
 		orbit_angle = { min = 90 max = 270 }
 		orbit_distance = 20
 	}
-	
+
 	planet = {
 		count = 1
 		orbit_distance = 25
 		class = ideal_planet_class
 		orbit_angle = { min = 90 max = 270 }
 		size = { min = 14 max = 24 }
-		
+
 		change_orbit = @base_moon_distance
 
 		moon = {
@@ -507,14 +507,14 @@ sol_neighbor_t2_second_colony = {
 			orbit_distance = 5
 		}
 	}
-	
+
 	planet = {
 		count = 2
 		orbit_angle = { min = 90 max = 270 }
 		orbit_distance = 20
-		
+
 		change_orbit = @base_moon_distance
-		
+
 		moon = {
 			count = { min = 0 max = 1 }
 			class = random_non_colonizable
@@ -522,7 +522,7 @@ sol_neighbor_t2_second_colony = {
 			orbit_distance = 5
 		}
 	}
-	
+
 	planet = {
 		count = { min = 0 max = 2 }
 		orbit_angle = { min = 90 max = 270 }
@@ -535,9 +535,9 @@ deneb_system = {
 	name = "Deneb"
 	class = "sc_a"
 	asteroids_distance = 90
-	
+
 	usage = custom_empire
-	
+
 	planet = {
 		name = "Deneb"
 		class = "pc_a_star"
@@ -546,7 +546,7 @@ deneb_system = {
 		size = 60
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Inferno"
 		class = "pc_molten"
@@ -555,7 +555,7 @@ deneb_system = {
 		size = 10
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "DT4-298"
 		class = "pc_asteroid"
@@ -564,7 +564,7 @@ deneb_system = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "LR-2129"
 		class = "pc_asteroid"
@@ -573,7 +573,7 @@ deneb_system = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "GR-345"
 		class = "pc_asteroid"
@@ -582,7 +582,7 @@ deneb_system = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Olympus"
 		class = "pc_gas_giant"
@@ -591,7 +591,7 @@ deneb_system = {
 		size = 40
 		has_ring = no
 		entity = "gas_giant_02_entity"
-		
+
 		moon = {
 			name = "New Luna"
 			class = "pc_frozen"
@@ -605,17 +605,17 @@ deneb_system = {
 			class = ideal_planet_class
 			orbit_distance = 5
 			orbit_angle = 340
-			size = 16
+			size = 18
 			starting_planet = yes
 			has_ring = no
-			entity = "continental_planet_01_entity"	
+			entity = "continental_planet_01_entity"
 			tile_blockers = none
 			modifiers = none
-			
+
 			init_effect = {
 				prevent_anomaly = yes
 			}
-		
+
 			init_effect = {
 				random_tile = {
 					limit = { has_blocker = no has_building = no num_adjacent_tiles > 3 }
@@ -624,11 +624,11 @@ deneb_system = {
 						resource = food
 						amount = 1
 						replace = yes
-					}	
+					}
 					add_resource = {
 						resource = minerals
 						amount = 1
-					}					
+					}
 					random_neighboring_tile = {
 						limit = { has_blocker = no has_building = no }
 						set_building = "building_hydroponics_farm_1"
@@ -636,7 +636,7 @@ deneb_system = {
 							resource = food
 							amount = 1
 							replace = yes
-						}						
+						}
 					}
 					random_neighboring_tile = {
 						limit = { has_blocker = no has_building = no }
@@ -645,7 +645,7 @@ deneb_system = {
 							resource = energy
 							amount = 1
 							replace = yes
-						}						
+						}
 					}
 					random_neighboring_tile = {
 						limit = { has_blocker = no has_building = no }
@@ -654,7 +654,7 @@ deneb_system = {
 							resource = energy
 							amount = 1
 							replace = yes
-						}						
+						}
 					}
 					random_neighboring_tile = {
 						limit = { has_blocker = no has_building = no }
@@ -663,8 +663,8 @@ deneb_system = {
 							resource = minerals
 							amount = 1
 							replace = yes
-						}						
-					}				
+						}
+					}
 				}
 				random_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -673,7 +673,7 @@ deneb_system = {
 						resource = engineering_research
 						amount = 1
 						replace = yes
-					}				
+					}
 				}
 				random_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -682,7 +682,7 @@ deneb_system = {
 						resource = society_research
 						amount = 1
 						replace = yes
-					}				
+					}
 				}
 				random_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -691,7 +691,7 @@ deneb_system = {
 						resource = physics_research
 						amount = 1
 						replace = yes
-					}				
+					}
 				}
 				random_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -700,7 +700,7 @@ deneb_system = {
 						resource = energy
 						amount = 2
 						replace = yes
-					}					
+					}
 				}
 				random_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -709,7 +709,7 @@ deneb_system = {
 						resource = food
 						amount = 1
 						replace = yes
-					}					
+					}
 				}
 				random_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -718,7 +718,7 @@ deneb_system = {
 						resource = energy
 						amount = 1
 						replace = yes
-					}				
+					}
 				}
 				random_tile = {
 					limit = { has_blocker = no has_building = no }
@@ -726,12 +726,12 @@ deneb_system = {
 						resource = food
 						amount = 1
 						replace = yes
-					}				
-				}			
+					}
+				}
 			}
-		}		
+		}
 	}
-	
+
 	planet = {
 		name = "Marble"
 		class = "pc_barren_cold"
@@ -740,7 +740,7 @@ deneb_system = {
 		size = 10
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Hyperion"
 		class = "pc_gas_giant"
@@ -749,7 +749,7 @@ deneb_system = {
 		size = 30
 		has_ring = no
 		entity = "gas_giant_05_entity"
-		
+
 		moon = {
 			name = "Helios"
 			class = "pc_frozen"
@@ -759,7 +759,7 @@ deneb_system = {
 			has_ring = no
 		}
 	}
-	
+
 	planet = {
 		name = "Tumbleweed"
 		class = "pc_barren"
@@ -768,7 +768,7 @@ deneb_system = {
 		size = 15
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Jackson's Planet"
 		class = "pc_frozen"
@@ -777,19 +777,19 @@ deneb_system = {
 		size = 20
 		has_ring = no
 	}
-	
+
 	neighbor_system = {
 		distance = { min = 10 max = @distance }
 		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
 			#want this?
-		}		
+		}
 		initializer = "neighbor_t1"
 	}
 	neighbor_system = {
 		distance = { min = 10 max = @distance }
 		trigger = {#scope = galactic_object ( parent ). root = root gal obj. from = closest parent. from from = grand parent...
 			#want this?
-		}		
+		}
 		initializer = "neighbor_t1_first_colony"
 	}
 }
@@ -800,7 +800,7 @@ vultaumar_system = {
 	class = "sc_b"
 	asteroids_distance = 0
 	flags = { vultaumar }
-	
+
 	planet = {
 		name = "Vultaumar"
 		class = "pc_b_star"
@@ -809,7 +809,7 @@ vultaumar_system = {
 		size = 35
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Vultaumar Prime"
 		class = "pc_barren"
@@ -820,14 +820,14 @@ vultaumar_system = {
 		entity = "barren_planet_01_destroyed_entity"
 		anomaly = "VULTAUMAR"
 		flags = { vultaum_homeworld }
-		
+
 		init_effect = {
 			create_ambient_object = {
 				type = "medium_debris_01_object"
 				location = THIS
 			}
 		}
-		
+
 		moon = {
 			name = "Vultaumar Ia"
 			class = "pc_barren_cold"
@@ -845,7 +845,7 @@ vultaumar_system = {
 			has_ring = no
 		}
 	}
-	
+
 	planet = {
 		name = "Vultaumar II"
 		class = "pc_toxic"
@@ -853,7 +853,7 @@ vultaumar_system = {
 		orbit_angle = 320
 		size = 30
 		has_ring = no
-		
+
 		moon = {
 			name = "Vultaumar IIa"
 			class = "pc_barren"
@@ -863,7 +863,7 @@ vultaumar_system = {
 			has_ring = no
 		}
 	}
-	
+
 	planet = {
 		name = "Vultaumar III"
 		class = "pc_toxic"
@@ -872,7 +872,7 @@ vultaumar_system = {
 		size = 25
 		has_ring = yes
 	}
-	
+
 	planet = {
 		name = "Vultaumar IV"
 		class = "pc_gas_giant"
@@ -880,7 +880,7 @@ vultaumar_system = {
 		orbit_angle = 125
 		size = 40
 		has_ring = no
-		
+
 		moon = {
 			name = "Vultaumar IVa"
 			class = "pc_frozen"
@@ -890,7 +890,7 @@ vultaumar_system = {
 			has_ring = no
 		}
 	}
-	
+
 	planet = {
 		name = "Vultaumar V"
 		class = "pc_gas_giant"
@@ -907,7 +907,7 @@ yuhtaan_system = {
 	class = "sc_m"
 	asteroids_distance = 125
 	flags = { yuhtaan }
-	
+
 	planet = {
 		name = "Yuthaan"
 		class = "pc_m_star"
@@ -916,7 +916,7 @@ yuhtaan_system = {
 		size = 25
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Yuthaan Majoris"
 		class = "pc_barren"
@@ -927,7 +927,7 @@ yuhtaan_system = {
 		entity = "barren_planet_01_destroyed_entity"
 		anomaly = "YUHTAAN"
 		flags = { yuht_homeworld }
-		
+
 		init_effect = {
 			create_ambient_object = {
 				type = "large_debris_object"
@@ -936,7 +936,7 @@ yuhtaan_system = {
 			create_ambient_object = {
 				type = "abandoned_starbase_01_object"
 			}
-			last_created_ambient_object = { 
+			last_created_ambient_object = {
 				set_location = {
 					target = THIS
 					distance = 5
@@ -944,7 +944,7 @@ yuhtaan_system = {
 				}
 			}
 		}
-		
+
 		moon = {
 			name = "Yuthaan Minoris"
 			class = "pc_barren_cold"
@@ -954,7 +954,7 @@ yuhtaan_system = {
 			has_ring = no
 		}
 	}
-	
+
 	planet = {
 		name = "Yuthaan II"
 		class = "pc_barren"
@@ -963,7 +963,7 @@ yuhtaan_system = {
 		size = 20
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Yuthaan III"
 		class = "pc_barren_cold"
@@ -972,7 +972,7 @@ yuhtaan_system = {
 		size = 15
 		has_ring = yes
 	}
-	
+
 	planet = {
 		class = "pc_asteroid"
 		orbit_distance = 30
@@ -980,7 +980,7 @@ yuhtaan_system = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_asteroid"
 		orbit_distance = 0
@@ -988,7 +988,7 @@ yuhtaan_system = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_asteroid"
 		orbit_distance = 0
@@ -996,7 +996,7 @@ yuhtaan_system = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Yuthaan IV"
 		class = "pc_gas_giant"
@@ -1005,7 +1005,7 @@ yuhtaan_system = {
 		size = 30
 		has_ring = no
 		change_orbit = 6
-		
+
 		moon = {
 			name = "Yuthaan IVa"
 			class = "pc_barren_cold"
@@ -1031,7 +1031,7 @@ yuhtaan_system = {
 			has_ring = no
 		}
 	}
-	
+
 	planet = {
 		name = "Yuthaan V"
 		class = "pc_gas_giant"
@@ -1040,7 +1040,7 @@ yuhtaan_system = {
 		size = 30
 		has_ring = yes
 		change_orbit = 6
-		
+
 		moon = {
 			name = "Yuthaan Va"
 			class = "pc_frozen"
@@ -1058,7 +1058,7 @@ fen_habbanis_system = {
 	class = "sc_g"
 	asteroids_distance = 85
 	flags = { fen_habbanis }
-	
+
 	planet = {
 		name = "Fen Habbanis"
 		class = "pc_g_star"
@@ -1067,7 +1067,7 @@ fen_habbanis_system = {
 		size = 30
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Fen Habbanis I"
 		class = "pc_molten"
@@ -1076,7 +1076,7 @@ fen_habbanis_system = {
 		size = 15
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Fen Habbanis II"
 		class = "pc_molten"
@@ -1085,7 +1085,7 @@ fen_habbanis_system = {
 		size = 10
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_asteroid"
 		orbit_distance = 25
@@ -1093,7 +1093,7 @@ fen_habbanis_system = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_asteroid"
 		orbit_distance = 0
@@ -1101,7 +1101,7 @@ fen_habbanis_system = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_asteroid"
 		orbit_distance = 0
@@ -1109,7 +1109,7 @@ fen_habbanis_system = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Fen Habbanis III"
 		class = "pc_barren"
@@ -1120,7 +1120,7 @@ fen_habbanis_system = {
 		anomaly = "FEN_HABBANIS"
 		flags = { first_league_homeworld }
 	}
-	
+
 	planet = {
 		name = "Fen Habbanis IV"
 		class = "pc_toxic"
@@ -1129,7 +1129,7 @@ fen_habbanis_system = {
 		size = 20
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Fen Habbanis V"
 		class = "pc_barren"
@@ -1138,7 +1138,7 @@ fen_habbanis_system = {
 		size = 20
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Fen Habbanis VI"
 		class = "pc_gas_giant"
@@ -1146,7 +1146,7 @@ fen_habbanis_system = {
 		orbit_angle = -160
 		size = 35
 		has_ring = no
-	}	
+	}
 }
 
 ### Irassian Home System
@@ -1155,12 +1155,12 @@ irass_system = {
 	class = "sc_f"
 	asteroids_distance = 125
 	flags = { irass }
-	
+
 	planet = {
 		class = star
 		orbit_distance = 0
 	}
-	
+
 	planet = {
 		name = "Irass I"
 		class = "pc_molten"
@@ -1169,7 +1169,7 @@ irass_system = {
 		size = 15
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Irass II"
 		class = "pc_molten"
@@ -1178,7 +1178,7 @@ irass_system = {
 		size = 25
 		has_ring = yes
 	}
-	
+
 	planet = {
 		name = "Irass III"
 		class = "pc_toxic"
@@ -1187,7 +1187,7 @@ irass_system = {
 		size = 20
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Irass IV"
 		class = "pc_barren"
@@ -1196,7 +1196,7 @@ irass_system = {
 		size = 15
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_asteroid"
 		orbit_distance = 30
@@ -1204,7 +1204,7 @@ irass_system = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		class = "pc_asteroid"
 		orbit_distance = 0
@@ -1212,7 +1212,7 @@ irass_system = {
 		size = 5
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Irass V"
 		class = "pc_barren"
@@ -1221,7 +1221,7 @@ irass_system = {
 		size = 20
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Irass VI"
 		class = "pc_gas_giant"
@@ -1229,7 +1229,7 @@ irass_system = {
 		orbit_angle = 145
 		size = 35
 		has_ring = no
-		
+
 		moon = {
 			name = "Irassia"
 			class = "pc_barren_cold"
@@ -1241,7 +1241,7 @@ irass_system = {
 			flags = { irassian_homeworld }
 		}
 	}
-	
+
 	planet = {
 		name = "Irass VII"
 		class = "pc_gas_giant"
@@ -1249,7 +1249,7 @@ irass_system = {
 		orbit_angle = 145
 		size = 20
 		has_ring = no
-		
+
 		moon = {
 			name = "Irass VIIa"
 			class = "pc_frozen"
@@ -1258,7 +1258,7 @@ irass_system = {
 			orbit_angle = 320
 			has_ring = no
 		}
-		
+
 		moon = {
 			name = "Irass VIIb"
 			class = "pc_frozen"
@@ -1268,7 +1268,7 @@ irass_system = {
 			has_ring = no
 		}
 	}
-	
+
 	planet = {
 		name = "Irass VIII"
 		class = "pc_gas_giant"
@@ -1277,7 +1277,7 @@ irass_system = {
 		size = 25
 		has_ring = no
 	}
-	
+
 	planet = {
 		name = "Irass IX"
 		class = "pc_barren_cold"
@@ -1293,21 +1293,21 @@ cybrex_system = {
 	name = "Cybrex Alpha"
 	class = "sc_g"
 	flags = { cybrex }
-	
+
 	planet = {
 		class = star
 		orbit_distance = 0
 	}
-	
+
 	change_orbit = 45
-	
+
 	planet = {
 		class = "pc_ringworld_habitable_damaged"
 		name = "Central Nexus"
 		orbit_angle = 30
 		orbit_distance = 0
 		anomaly = "CYBREX"
-		
+
 		init_effect = {
 			create_ambient_object = {
 				type = "large_debris_object"
@@ -1326,7 +1326,7 @@ cybrex_system = {
 		name = "Ruined Segment"
 		orbit_angle = 30
 		orbit_distance = 0
-		
+
 		init_effect = {
 			create_ambient_object = {
 				type = "medium_debris_01_object"
@@ -1345,7 +1345,7 @@ cybrex_system = {
 		name = "Ruined Segment"
 		orbit_angle = 30
 		orbit_distance = 0
-		
+
 		init_effect = {
 			create_ambient_object = {
 				type = "small_debris_object"
@@ -1364,7 +1364,7 @@ cybrex_system = {
 		name = "Ruined Segment"
 		orbit_angle = 30
 		orbit_distance = 0
-		
+
 		init_effect = {
 			create_ambient_object = {
 				type = "medium_debris_02_object"
@@ -1383,7 +1383,7 @@ cybrex_system = {
 		name = "Ruined Segment"
 		orbit_angle = 30
 		orbit_distance = 0
-		
+
 		init_effect = {
 			create_ambient_object = {
 				type = "large_debris_object"
@@ -1402,7 +1402,7 @@ cybrex_system = {
 		name = "Ruined Segment"
 		orbit_angle = 30
 		orbit_distance = 0
-		
+
 		init_effect = {
 			create_ambient_object = {
 				type = "small_debris_object"
@@ -1416,7 +1416,7 @@ cybrex_system = {
 		orbit_angle = 30
 		orbit_distance = 0
 	}
-	
+
 	init_effect = {
 		create_ambient_object = {
 			type = "large_debris_object"
@@ -1452,4 +1452,3 @@ cybrex_system = {
 		}
 	}
 }
-
