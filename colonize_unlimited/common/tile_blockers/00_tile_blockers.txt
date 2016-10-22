@@ -387,12 +387,6 @@ tb_deep_sinkhole = {
 ### SPECIAL
 
 tb_radioactive_wasteland = {
-	time = 100
-	cost = {
-		energy = 50
-		minerals = 50
-	}
-
 	spawn_chance = {
 		modifier = {
 			add = 30
@@ -403,8 +397,7 @@ tb_radioactive_wasteland = {
 	}
 
 	adjacency_bonus = {
-		resource_society_research_add = 2
-		resource_physics_research_add = 2
+		resource_physics_research_add = 1
 	}
 }
 
@@ -422,6 +415,10 @@ tb_city_ruins = {
 				is_planet_class = pc_nuked
 			}
 		}
+	}
+
+	adjacency_bonus = {
+		resource_society_research_add = 1
 	}
 }
 
@@ -492,7 +489,7 @@ tb_tribal_settlement = {
 	}
 
 	adjacency_bonus = {
-		resource_society_research_add = 3
+		resource_society_research_add = 1
 	}
 }
 
@@ -520,7 +517,7 @@ tb_wandering_forest_reserve = {
 	}
 
 	adjacency_bonus = {
-		resource_society_research_add = 5
+		resource_society_research_add = 3
 	}
 }
 
@@ -619,4 +616,30 @@ tb_bombarded_land = {
 			add = 0
 		}
 	}
+}
+
+﻿tb_xeno_preserve = {
+	﻿# Can't be removed
+	﻿cost = {
+	﻿}
+	﻿
+	﻿spawn_chance = {
+		﻿modifier = {
+			﻿add = 0
+		﻿}
+	﻿}
+﻿}
+﻿
+﻿tb_ancient_ruins = {
+	﻿time = 180
+	﻿cost = {
+		﻿energy = 150
+		﻿minerals = 150
+	﻿}
+	﻿
+	﻿spawn_chance = {
+		﻿modifier = {
+		﻿	add = 0
+		﻿}
+	﻿}
 }
