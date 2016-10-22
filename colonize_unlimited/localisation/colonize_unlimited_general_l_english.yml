@@ -1,2 +1,8 @@
 ﻿l_english:
   requires_building_capital_and_not_water_void:0 "§RRequires §Y$building_capital_1$§! on a planet with water. (not a desert, arid, gas giant, molten, barren, toxic or tomb)§!"
+  climate_gas:0 "Gaseous"
+  climate_inhospitable:0 "Inhospitable"
+  climate_harsh:0 "Harsh"
+  gas:0 "§M(Gas)§!"
+  inhospitable:0 "§E(Inhospitable Climate)§!"
+  harsh:0 "§!(Harsh Climate)§!"
