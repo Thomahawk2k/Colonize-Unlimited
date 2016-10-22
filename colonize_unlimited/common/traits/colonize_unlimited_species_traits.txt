@@ -6,7 +6,7 @@ trait_pc_gas_giant_preference = {
 	icon = "gfx/interface/icons/traits/trait_pc_gas_giant_preference.dds"
 	modification = no
 	modifier = {
-		pc_gas_giant_habitability = @primary
+			pc_gas_giant_habitability = @primary
 	}
 }
 
