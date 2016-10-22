@@ -8,4 +8,4 @@ tags={
 }
 picture="colunlim.jpg"
 remote_file_id="682582076"
-supported_version="1.2.*"
+supported_version="1.3.*"
