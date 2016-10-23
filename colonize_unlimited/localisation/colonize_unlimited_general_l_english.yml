@@ -4,5 +4,5 @@
   climate_inhospitable:0 "Inhospitable"
   climate_harsh:0 "Harsh"
   gas:0 "§M(Gas)§!"
-  inhospitable:0 "§E(Inhospitable Climate)§!"
-  harsh:0 "§!(Harsh Climate)§!"
+  inhospitable:0 "§H(Inhospitable Climate)§!"
+  harsh:0 "§R(Harsh Climate)§!"
