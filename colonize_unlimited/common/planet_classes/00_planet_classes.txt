@@ -339,7 +339,7 @@ pc_gas_giant = {
 
 	production_spawn_chance = 0.5
 
-	colonizable = no
+	colonizable = yes
 }
 
 pc_asteroid = {
