@@ -226,6 +226,12 @@ tb_quicksand_basin = {
 
 	spawn_chance = {
 		modifier = {
+			factor = 0
+			planet = {
+				is_planet_class = pc_gas_giant
+			}
+		}
+		modifier = {
 			add = 36
 			planet = {
 				is_planet_class = pc_desert
@@ -263,6 +269,12 @@ tb_noxious_swamp = {
 
 	spawn_chance = {
 		modifier = {
+			factor = 0
+			planet = {
+				is_planet_class = pc_gas_giant
+			}
+		}
+		modifier = {
 			add = 36
 			planet = {
 				is_planet_class = pc_tundra
@@ -293,6 +305,12 @@ tb_massive_glacier = {
 	}
 
 	spawn_chance = {
+		modifier = {
+			factor = 0
+			planet = {
+				is_planet_class = pc_gas_giant
+			}
+		}
 		modifier = {
 			add = 60
 			planet = {
@@ -331,6 +349,12 @@ tb_toxic_kelp = {
 
 	spawn_chance = {
 		modifier = {
+			factor = 0
+			planet = {
+				is_planet_class = pc_gas_giant
+			}
+		}
+		modifier = {
 			add = 54
 			planet = {
 				is_planet_class = pc_ocean
@@ -361,6 +385,12 @@ tb_deep_sinkhole = {
 	}
 
 	spawn_chance = {
+		modifier = {
+			factor = 0
+			planet = {
+				is_planet_class = pc_gas_giant
+			}
+		}
 		modifier = {
 			add = 36
 			planet = {

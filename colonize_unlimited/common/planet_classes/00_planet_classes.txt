@@ -315,6 +315,7 @@ pc_alpine = {
 
 pc_gas_giant = {
 	entity = "gas_giant"
+	picture = pc_ocean
 	entity_scale = 14
 	icon_frame = 14
 
@@ -340,6 +341,7 @@ pc_gas_giant = {
 	production_spawn_chance = 0.5
 
 	colonizable = yes
+	starting_planet = no
 	colonization_tech = { "tech_floating_cities" }
 }
 
@@ -365,6 +367,7 @@ pc_asteroid = {
 
 pc_molten = {
 	entity = "molten_planet"
+	picture = pc_desert
 	entity_scale = @planet_standard_scale
 	icon_frame = 12
 
@@ -392,6 +395,7 @@ pc_molten = {
 
 pc_barren = {
 	entity = "barren_planet"
+	picture = pc_arid
 	entity_scale = @planet_standard_scale
 	icon_frame = 10
 
@@ -419,6 +423,7 @@ pc_barren = {
 
 pc_barren_cold = {
 	entity = "cold_barren_planet"
+	picture = pc_tundra
 	entity_scale = @planet_standard_scale
 	icon_frame = 9
 
@@ -446,6 +451,7 @@ pc_barren_cold = {
 
 pc_toxic = {
 	entity = "toxic_planet"
+	picture = pc_tundra
 	entity_scale = @planet_standard_scale
 	icon_frame = 11
 
@@ -474,6 +480,7 @@ pc_toxic = {
 
 pc_frozen = {
 	entity = "frozen_planet"		#DONE
+	picture = pc_arctic
 	entity_scale = @planet_standard_scale
 	icon_frame = 13
 
