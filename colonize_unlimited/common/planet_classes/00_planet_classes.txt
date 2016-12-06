@@ -537,7 +537,7 @@ pc_nuked = {
 
 	min_distance_from_sun = 60
 	max_distance_from_sun = 110
-	spawn_odds = 0.5
+	spawn_odds = 0.2
 
 	extra_orbit_size = 0
 	extra_planet_count = 0

@@ -120,6 +120,24 @@ random_empire_init_01 = {
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
+				set_building = "building_hydroponics_farm_1"
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_mining_network_1"
+				add_resource = {
+					resource = minerals
+					amount = 1
+					replace = yes
+				}
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
 				set_blocker = "tb_failing_infrastructure"
 				add_resource = {
 					resource = engineering_research
@@ -159,7 +177,7 @@ random_empire_init_01 = {
 				set_blocker = "tb_decrepit_dwellings"
 				add_resource = {
 					resource = food
-					amount = 1
+					amount = 2
 					replace = yes
 				}
 			}
@@ -167,15 +185,16 @@ random_empire_init_01 = {
 				limit = { has_blocker = no has_building = no }
 				set_blocker = "tb_decrepit_dwellings"
 				add_resource = {
-					resource = energy
+					resource = minerals
 					amount = 1
 					replace = yes
 				}
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
+				set_building = "building_power_plant_1"
 				add_resource = {
-					resource = food
+					resource = energy
 					amount = 1
 					replace = yes
 				}
@@ -318,6 +337,24 @@ random_empire_init_02 = {
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
+				set_building = "building_hydroponics_farm_1"
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_mining_network_1"
+				add_resource = {
+					resource = minerals
+					amount = 1
+					replace = yes
+				}
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
 				set_blocker = "tb_failing_infrastructure"
 				add_resource = {
 					resource = engineering_research
@@ -357,7 +394,7 @@ random_empire_init_02 = {
 				set_blocker = "tb_decrepit_dwellings"
 				add_resource = {
 					resource = food
-					amount = 1
+					amount = 2
 					replace = yes
 				}
 			}
@@ -365,15 +402,16 @@ random_empire_init_02 = {
 				limit = { has_blocker = no has_building = no }
 				set_blocker = "tb_decrepit_dwellings"
 				add_resource = {
-					resource = energy
+					resource = minerals
 					amount = 1
 					replace = yes
 				}
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
+				set_building = "building_power_plant_1"
 				add_resource = {
-					resource = food
+					resource = energy
 					amount = 1
 					replace = yes
 				}
@@ -602,6 +640,24 @@ random_empire_init_03 = {
 				}
 				random_tile = {
 					limit = { has_blocker = no has_building = no }
+					set_building = "building_hydroponics_farm_1"
+					add_resource = {
+						resource = food
+						amount = 1
+						replace = yes
+					}
+				}
+				random_tile = {
+					limit = { has_blocker = no has_building = no }
+					set_building = "building_mining_network_1"
+					add_resource = {
+						resource = minerals
+						amount = 1
+						replace = yes
+					}
+				}
+				random_tile = {
+					limit = { has_blocker = no has_building = no }
 					set_blocker = "tb_failing_infrastructure"
 					add_resource = {
 						resource = engineering_research
@@ -641,7 +697,7 @@ random_empire_init_03 = {
 					set_blocker = "tb_decrepit_dwellings"
 					add_resource = {
 						resource = food
-						amount = 1
+						amount = 2
 						replace = yes
 					}
 				}
@@ -649,15 +705,16 @@ random_empire_init_03 = {
 					limit = { has_blocker = no has_building = no }
 					set_blocker = "tb_decrepit_dwellings"
 					add_resource = {
-						resource = energy
+						resource = minerals
 						amount = 1
 						replace = yes
 					}
 				}
 				random_tile = {
 					limit = { has_blocker = no has_building = no }
+					set_building = "building_power_plant_1"
 					add_resource = {
-						resource = food
+						resource = energy
 						amount = 1
 						replace = yes
 					}
@@ -796,6 +853,24 @@ random_empire_init_04 = {
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
+				set_building = "building_hydroponics_farm_1"
+				add_resource = {
+					resource = food
+					amount = 1
+					replace = yes
+				}
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
+				set_building = "building_mining_network_1"
+				add_resource = {
+					resource = minerals
+					amount = 1
+					replace = yes
+				}
+			}
+			random_tile = {
+				limit = { has_blocker = no has_building = no }
 				set_blocker = "tb_failing_infrastructure"
 				add_resource = {
 					resource = engineering_research
@@ -835,7 +910,7 @@ random_empire_init_04 = {
 				set_blocker = "tb_decrepit_dwellings"
 				add_resource = {
 					resource = food
-					amount = 1
+					amount = 2
 					replace = yes
 				}
 			}
@@ -843,15 +918,16 @@ random_empire_init_04 = {
 				limit = { has_blocker = no has_building = no }
 				set_blocker = "tb_decrepit_dwellings"
 				add_resource = {
-					resource = energy
+					resource = minerals
 					amount = 1
 					replace = yes
 				}
 			}
 			random_tile = {
 				limit = { has_blocker = no has_building = no }
+				set_building = "building_power_plant_1"
 				add_resource = {
-					resource = food
+					resource = energy
 					amount = 1
 					replace = yes
 				}
