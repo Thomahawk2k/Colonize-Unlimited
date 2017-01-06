@@ -33,3 +33,6 @@
   tech_floating_cities_desc:0 "By attaching floating devices to platforms, we can float entire cities on thick gases."
   TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_TITLE:0 "Floating Cities"
   TECH_UNLOCK_DOSAKI_FLOATING_CITIES_CHANGE_DESC:0 "Allows us to colonize Gas Giants by building floating cities."
+  tech_water_extracting
+  tech_water_extracting:0 "Water Extraction"
+  tech_water_extracting_desc:1 "Extract and store water to be used in terraforming projects."

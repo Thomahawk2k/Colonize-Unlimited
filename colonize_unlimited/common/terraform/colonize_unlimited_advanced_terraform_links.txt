@@ -217,7 +217,7 @@ terraform_link = {
 ####################
 
 terraform_link = {
-	from = "pc_artic"
+	from = "pc_arctic"
 	to = "pc_ocean"
 
 	energy = 5000
@@ -230,7 +230,7 @@ terraform_link = {
 
 terraform_link = {
 	from = "pc_ocean"
-	to = "pc_artic"
+	to = "pc_arctic"
 
 	energy = 5000
 	duration = 3600
